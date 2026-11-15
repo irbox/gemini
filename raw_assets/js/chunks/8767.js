@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkuniblog_author=self.webpackChunkuniblog_author||[]).push([[8767],{9319:()=>{},8767:(u,e,s)=>{s.r(e),s.d(e,{default:()=>l});var a=s(398);s(9319);class l extends a.Z{}}}]);

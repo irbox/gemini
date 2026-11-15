@@ -1,0 +1,24 @@
+{
+  "name": "google-blog-reconstruction",
+  "version": "1.0.0",
+  "description": "Reverse engineered and reconstructed source code for https://blog.google/ (Google Keyword Blog)",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "blog.google",
+    "the-keyword",
+    "reverse-engineering",
+    "google-glue",
+    "rea"
+  ],
+  "author": "Google DeepMind Antigravity Agent",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "vite": "^5.4.11"
+  }
+}
