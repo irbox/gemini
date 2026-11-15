@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
+  base: process.env.VITE_BASE || '/gemini/',
   root: '.',
   server: {
     port: 3000,

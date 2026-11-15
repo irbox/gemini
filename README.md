@@ -195,3 +195,24 @@ npm run build
 npm run preview
 # Serves the compiled dist/ directory locally
 ```
+
+---
+
+## 6. GitHub Actions & GitHub Pages Deployment
+
+- **Live URL**: [https://irbox.github.io/gemini/](https://irbox.github.io/gemini/)
+- **Workflow**: [.github/workflows/deploy.yml](file:///.github/workflows/deploy.yml)
+
+### Automated CI/CD Pipeline
+Every push to `main` automatically:
+1. Checks out the repository and sets up Node.js 20 with cached npm dependencies.
+2. Runs the automated unit tests (`npm test`).
+3. Builds the production site with Vite (`npm run build`, targeting `/gemini/`).
+4. Packages and uploads the `dist/` directory as a GitHub Pages artifact.
+5. Deploys the site to GitHub Pages with zero-downtime deployment.
+
+### Enabling GitHub Pages in the Repository
+To activate automated deployments:
+1. Navigate to your repository: **https://github.com/irbox/gemini/settings/pages**
+2. Under **Build and deployment** > **Source**, select **GitHub Actions**.
+3. Push to `main` (or run the workflow manually via the **Actions** tab).
