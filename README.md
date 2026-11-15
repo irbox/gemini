@@ -147,7 +147,9 @@ The reconstruction followed REA's safe, static analysis workflow:
 │   │   └── LitElementBase.js      # WebComponents custom elements registry
 │   ├── styles/
 │   │   └── main.css               # 445KB authentic Google Blog design system
-│   └── raw_modules/               # 47 disassembled raw Webpack modules
+│   ├── assets/                    # Bundled font & vector glyph assets (WOFF2, SVG)
+│   ├── raw_modules/               # 47 disassembled raw Webpack modules
+├── test/                          # Automated unit test suite (Node.js test runner)
 └── raw_assets/                    # 147 raw Webpack JS/CSS chunks + original scripts
 ```
 
@@ -155,7 +157,22 @@ The reconstruction followed REA's safe, static analysis workflow:
 
 ## 5. Verification & Build Instructions
 
-The reconstructed application is fully self-contained and builds with zero errors:
+The reconstructed application is fully self-contained, passes all automated tests, and builds cleanly with zero errors:
+
+### Automated Unit Tests
+```bash
+npm test
+# Executes node native test runner against core modules & analytics:
+# ✔ AnalyticsDispatcher - Twitter handle redaction
+# ✔ AnalyticsDispatcher - Format and validate attributes
+# ✔ AnalyticsDispatcher - Diff event data against previous state
+# ✔ Store - dispatch and subscribe
+# ✔ Store - unsubscribe
+# ✔ Store - setState and getState
+# ✔ utils - generateId creates unique ids
+# ✔ utils - getLinkType classifies properly
+# ℹ tests 8, pass 8, fail 0
+```
 
 ### Development Server
 ```bash
@@ -167,9 +184,10 @@ npm run dev
 ```bash
 npm run build
 # Compiles bundles cleanly to dist/ via Vite:
-# dist/index.html                 395.24 kB
-# dist/assets/index-pG6F6j6v.css  444.44 kB
-# dist/assets/index-B0ZiRK2h.js    30.89 kB
+# dist/assets/24901c6478066fd1c5af-xkUwE-OF.woff2   36.72 kB
+# dist/index.html                                  395.24 kB
+# dist/assets/index-oCygZwpZ.css                   444.85 kB
+# dist/assets/index-HaCtsot2.js                     30.89 kB
 ```
 
 ### Preview Production Build
