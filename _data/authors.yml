@@ -1,41 +1,41 @@
-sundar-pichai:
-  name: "Sundar Pichai"
-  role: "CEO of Google and Alphabet"
-  avatar: "/storage.googleapis.com/gweb-uniblog-publish-prod/images/Adobe_snippet_hero.width-400.format-webp.webp"
-  bio: "Sundar Pichai is the CEO of Google and Alphabet."
-  twitter: "sundarpichai"
+ada-lovelace:
+  name: "Ada Lovelace"
+  role: "Computing Pioneer & Research Lead"
+  avatar: "/assets/images/authors/ada-lovelace.svg"
+  bio: "Theoretical computer scientist and computational linguist researching frontier reasoning models."
+  twitter: "lovelace_ai"
 
-demis-hassabis:
-  name: "Demis Hassabis"
-  role: "CEO of Google DeepMind"
-  avatar: "/storage.googleapis.com/gweb-uniblog-publish-prod/images/video_6134_TPU_Alt.width-800.format-webp.webp"
-  bio: "Demis Hassabis is the co-founder and CEO of Google DeepMind, leading frontier AI research."
-  twitter: "demishassabis"
+clara-shannon:
+  name: "Clara Shannon"
+  role: "Principal Distributed Systems Architect"
+  avatar: "/assets/images/authors/clara-shannon.svg"
+  bio: "Architecting planetary low-latency telemetry networks and browser neural synthesis pipelines."
+  twitter: "clarashannon"
 
-pixel-team:
-  name: "Pixel Product Team"
-  role: "Hardware & Android Systems"
-  avatar: "/storage.googleapis.com/gweb-uniblog-publish-prod/images/Pixel_drop_im.2e16d0ba.fill-1200x800.format-webp.webp"
-  bio: "The engineering and design team behind Google Pixel devices and feature drops."
-  twitter: "madebygoogle"
+kai-chen:
+  name: "Kai Chen"
+  role: "Director of Silicon & Custom Accelerators"
+  avatar: "/assets/images/authors/kai-chen.svg"
+  bio: "Microarchitect leading custom matrix accelerator design and optical circuit switching fabrics."
+  twitter: "kaichen_silicon"
 
-cloud-team:
-  name: "Google Cloud Infrastructure Team"
-  role: "Silicon & Distributed Systems"
-  avatar: "/storage.googleapis.com/gweb-uniblog-publish-prod/images/TPU-8tx_and_8i-Max.2e16d0ba.fill-1200x800.format-webp.webp"
-  bio: "Designing the custom silicon, TPUs, and planetary networks powering Google Cloud."
-  twitter: "googlecloud"
+marcus-vance:
+  name: "Dr. Marcus Vance"
+  role: "Autonomous Robotics & Planetary Exploration"
+  avatar: "/assets/images/authors/marcus-vance.svg"
+  bio: "Aerospace engineer and roboticist developing autonomous spatial pathfinding for deep space rovers."
+  twitter: "marcusvance"
 
-shopping-team:
-  name: "Google Shopping Team"
-  role: "Consumer Trends & Search"
-  avatar: "/storage.googleapis.com/gweb-uniblog-publish-prod/images/Holiday10.2e16d0ba.fill-1200x800.format-webp.webp"
-  bio: "Curating holiday trends, shopping intelligence, and gift guides."
-  twitter: "google"
+elena-rostova:
+  name: "Dr. Elena Rostova"
+  role: "Quantum Algorithms & Surface Code Lead"
+  avatar: "/assets/images/authors/elena-rostova.svg"
+  bio: "Experimental quantum physicist advancing fault-tolerant superconducting logical qubits."
+  twitter: "elena_quantum"
 
-robotics-team:
-  name: "Google Robotics & NASA JPL"
-  role: "Autonomous Space Systems"
-  avatar: "/storage.googleapis.com/gweb-uniblog-publish-prod/original_images/NASA_BLOG.max-2000x2000.jpg"
-  bio: "Collaborative research team developing autonomous planetary navigation algorithms."
-  twitter: "googledeepmind"
+sarah-jenkins:
+  name: "Sarah Jenkins"
+  role: "Next-Gen Biosensors & Wearable Systems"
+  avatar: "/assets/images/authors/sarah-jenkins.svg"
+  bio: "Biomedical engineer designing continuous PPG arrays and electrodermal stress biomarkers."
+  twitter: "sarahjenkins"

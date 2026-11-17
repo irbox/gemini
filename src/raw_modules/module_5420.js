@@ -1,4 +1,0 @@
-// Module 5420
-export default function(e,t,i) {
-i.d(t,{V:()=>a,Z:()=>r});var s=i(221),n=i(8376);const a={SCROLLED:"SCROLL_TRACKER/SCROLLED"};const r=class{constructor(){this.lastScroll=this.getScrolledTop(),window.addEventListener(s.Z.SCROLL,()=>this.onScrolled())}getScrolledTop(){return window.scrollY||window.pageYOffset||document.body.scrollTop||document.documentElement.scrollTop}getPageHeight(){return Math.max(document.body.scrollHeight,document.body.offsetHeight,document.documentElement.clientHeight,document.documentElement.scrollHeight,document.documentElement.offsetHeight)}getScrollDelta(e){const t=e-this.lastScroll;return this.lastScroll=e,t}getScrolledData(){const e=this.getScrolledTop(),t=window.innerHeight,i=this.getPageHeight(),s=this.getScrollDelta(e);return{scroll:e,viewportPercent:e/t,pagePercent:Math.ceil(0===e?0:e+t)/i,delta:s}}onScrolled(){const e=this.getScrolledData();n.Z.dispatch(a.SCROLLED,e)}}
-}

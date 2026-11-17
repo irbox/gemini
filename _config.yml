@@ -1,16 +1,16 @@
-# The Keyword - Official Google Blog Jekyll Configuration
-# Jekyll 4.x / GitHub Pages Architecture
+# The Lovelace Journal - Jekyll Configuration
+# Standard Jekyll 4.x & GitHub Pages Architecture
 
-# Site metadata
-title: "The Keyword"
-tagline: "News and Stories from Google"
-description: "Get the latest news and stories about Google products, technology and innovation on The Keyword, Google's official blog."
+# Site Metadata
+title: "The Lovelace Journal"
+tagline: "Perspectives on Frontier Computing, Intelligence & Engineering"
+description: "Original perspectives, breakthroughs, and architectural insights in artificial intelligence, custom silicon, quantum computing, and autonomous robotics."
 url: "https://irbox.github.io"
 baseurl: "/gemini"
 locale: "en-US"
 timezone: "America/Los_Angeles"
-author: "Google"
-email: "press@google.com"
+author: "The Lovelace Editorial Board"
+email: "editorial@lovelace-journal.org"
 
 # Content Collections & Permalinks
 collections:
@@ -25,7 +25,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      author: "Google"
+      author: "ada-lovelace"
   - scope:
       path: ""
       type: "pages"
@@ -62,18 +62,11 @@ exclude:
   - node_modules/
   - package.json
   - package-lock.json
-  - vite.config.js
-  - src/
   - test/
   - scripts/
-  - raw_assets/
-  - raw_index.html
-  - extracted_modules_manifest.json
   - .github/workflows/deploy.yml
+  - attachments/
 
 # Assets to Include
 include:
   - assets
-  - static
-  - storage.googleapis.com
-  - www.gstatic.com

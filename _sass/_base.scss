@@ -22,11 +22,11 @@ body {
 }
 
 a {
-  color: $google-blue;
+  color: $color-primary;
   text-decoration: none;
   transition: $transition-default;
   &:hover {
-    color: $google-blue-hover;
+    color: $color-primary-hover;
     text-decoration: underline;
   }
 }
@@ -41,7 +41,7 @@ img, video {
   position: absolute;
   top: -40px;
   left: 16px;
-  background: $google-blue;
+  background: $color-primary;
   color: #fff;
   padding: 8px 16px;
   border-radius: $radius-sm;
@@ -87,14 +87,14 @@ img, video {
   transition: $transition-default;
 
   &:hover {
-    background: $google-blue-light;
-    color: $google-blue;
+    background: $color-primary-light;
+    color: $color-primary;
     text-decoration: none;
   }
 
   &--primary {
-    background: $google-blue-light;
-    color: $google-blue;
+    background: $color-primary-light;
+    color: $color-primary;
   }
 }
 
@@ -113,10 +113,10 @@ img, video {
   text-decoration: none;
 
   &--primary {
-    background-color: $google-blue;
+    background-color: $color-primary;
     color: #ffffff;
     &:hover {
-      background-color: $google-blue-hover;
+      background-color: $color-primary-hover;
       color: #ffffff;
       text-decoration: none;
     }
@@ -125,10 +125,10 @@ img, video {
   &--outline {
     background-color: transparent;
     border-color: $color-border-subtle;
-    color: $google-blue;
+    color: $color-primary;
     &:hover {
-      background-color: $google-blue-light;
-      border-color: $google-blue;
+      background-color: $color-primary-light;
+      border-color: $color-primary;
       text-decoration: none;
     }
   }

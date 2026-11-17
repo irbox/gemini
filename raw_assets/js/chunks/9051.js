@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkuniblog_author=self.webpackChunkuniblog_author||[]).push([[9051],{9051:(t,e,u)=>{function a(t){return{name:"Plain text",aliases:["text","txt"],disableAutodetect:!0}}u.r(e),u.d(e,{default:()=>a})}}]);

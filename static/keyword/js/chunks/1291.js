@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkuniblog_author=self.webpackChunkuniblog_author||[]).push([[1291],{1291:(e,l,s)=>{s.r(l),s.d(l,{default:()=>h});var t=s(221),n=s(398);class a extends n.Z{_elements(){this.links=this.el.querySelectorAll("a")}_events(){this.links.forEach(e=>{e.addEventListener(t.Z.CLICK,this._handleClick)})}_handleClick(e){e.preventDefault()}}const h=a}}]);

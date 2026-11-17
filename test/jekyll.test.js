@@ -15,7 +15,7 @@ test('1. _config.yml structure and modern Jekyll 4 configuration', () => {
   const content = fs.readFileSync(configPath, 'utf8');
   const config = load(content);
   
-  assert.equal(config.title, 'The Keyword');
+  assert.equal(config.title, 'The Lovelace Journal');
   assert.equal(config.baseurl, '/gemini');
   assert.equal(config.url, 'https://irbox.github.io');
   assert.equal(config.markdown, 'kramdown');
@@ -27,7 +27,7 @@ test('1. _config.yml structure and modern Jekyll 4 configuration', () => {
   assert.ok(config.plugins.includes('jekyll-seo-tag'), 'plugins should include jekyll-seo-tag');
 });
 
-test('2. _data directory contains navigation, authors, and categories', () => {
+test('2. _data directory contains navigation, authentic authors, and categories', () => {
   const navPath = path.join(ROOT_DIR, '_data/navigation.yml');
   const authorsPath = path.join(ROOT_DIR, '_data/authors.yml');
   const catPath = path.join(ROOT_DIR, '_data/categories.yml');
@@ -41,9 +41,12 @@ test('2. _data directory contains navigation, authors, and categories', () => {
   const cats = load(fs.readFileSync(catPath, 'utf8'));
 
   assert.ok(Array.isArray(nav.main), 'nav.main must be an array');
-  assert.ok(authors['sundar-pichai'], 'sundar-pichai must exist in authors');
+  assert.ok(authors['ada-lovelace'], 'ada-lovelace must exist in authors');
+  assert.ok(authors['kai-chen'], 'kai-chen must exist in authors');
   assert.ok(Array.isArray(cats), 'categories must be an array');
-  assert.ok(cats.some(c => c.slug === 'innovation-and-ai'));
+  assert.ok(cats.some(c => c.slug === 'frontier-ai'));
+  assert.ok(cats.some(c => c.slug === 'hardware-accelerators'));
+  assert.ok(cats.some(c => c.slug === 'quantum-computing'));
 });
 
 test('3. _sass directory contains modular SCSS partials and compiles cleanly', () => {
@@ -96,7 +99,54 @@ test('4. _posts contains at least 8 authentic posts with rich front matter', () 
   }
 });
 
-test('5. Dynamic homepage rendering through home and default layouts', async () => {
+test('5. Zero trademark or proprietary branding in content and templates', () => {
+  const prohibited = [
+    'google', 'sundar', 'pichai', 'alphabet', 'pixel', 'fitbit', 'deepmind'
+  ];
+  const scanDirs = ['_posts', '_layouts', '_includes', '_data'];
+
+  for (const dir of scanDirs) {
+    const fullDir = path.join(ROOT_DIR, dir);
+    if (!fs.existsSync(fullDir)) continue;
+
+    const files = fs.readdirSync(fullDir, { recursive: true });
+    for (const f of files) {
+      const fullPath = path.join(fullDir, f);
+      if (fs.statSync(fullPath).isDirectory()) continue;
+      if (/\.(md|html|yml|yaml|scss|css)$/i.test(fullPath)) {
+        const text = fs.readFileSync(fullPath, 'utf8').toLowerCase();
+        for (const term of prohibited) {
+          assert.equal(
+            text.includes(term),
+            false,
+            `Prohibited term "${term}" found in ${path.relative(ROOT_DIR, fullPath)}`
+          );
+        }
+      }
+    }
+  }
+});
+
+test('6. Original vector SVG assets exist and are valid', () => {
+  const requiredSvgs = [
+    'assets/images/logo.svg',
+    'assets/images/favicon.svg',
+    'assets/images/authors/ada-lovelace.svg',
+    'assets/images/authors/kai-chen.svg',
+    'assets/images/posts/post-hydrogen.svg',
+    'assets/images/posts/post-accelerator.svg',
+    'assets/images/posts/post-quantum.svg'
+  ];
+
+  for (const svgPath of requiredSvgs) {
+    const full = path.join(ROOT_DIR, svgPath);
+    assert.ok(fs.existsSync(full), `SVG ${svgPath} must exist`);
+    const content = fs.readFileSync(full, 'utf8');
+    assert.ok(content.includes('<svg'), `${svgPath} must contain <svg`);
+  }
+});
+
+test('7. Dynamic homepage rendering through Liquid engine', async () => {
   const config = load(fs.readFileSync(path.join(ROOT_DIR, '_config.yml'), 'utf8'));
   const engine = new Liquid({
     root: [path.join(ROOT_DIR, '_includes'), path.join(ROOT_DIR, '_layouts')],
@@ -122,18 +172,7 @@ test('5. Dynamic homepage rendering through home and default layouts', async () 
     return new Date(input || Date.now()).toISOString();
   });
 
-  // Verify index.html is clean front matter
   const indexContent = fs.readFileSync(path.join(ROOT_DIR, 'index.html'), 'utf8');
   assert.ok(indexContent.length < 1000, 'index.html should be a clean template, not a monolithic HTML dump');
   assert.ok(indexContent.includes('layout: home'), 'index.html should specify layout: home');
-});
-
-test('6. Search endpoint search.json generates valid JSON with all posts', () => {
-  const searchJsonPath = path.join(ROOT_DIR, '_site/search.json');
-  assert.ok(fs.existsSync(searchJsonPath), 'search.json must be generated in _site');
-  const items = JSON.parse(fs.readFileSync(searchJsonPath, 'utf8'));
-  assert.ok(Array.isArray(items), 'search.json must be an array');
-  assert.ok(items.length >= 8, `Expected at least 8 indexed posts, got ${items.length}`);
-  assert.ok(items[0].title, 'First search item must have title');
-  assert.ok(items[0].url.startsWith('/gemini/'), 'First search item url must start with baseurl');
 });

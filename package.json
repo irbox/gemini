@@ -1,29 +1,26 @@
 {
-  "name": "google-blog-reconstruction",
+  "name": "lovelace-journal",
   "version": "1.0.0",
-  "description": "Reverse engineered and reconstructed source code for https://blog.google/ (Google Keyword Blog)",
+  "description": "The Lovelace Journal - Modern Jekyll static research publication and engineering blog",
   "type": "module",
   "scripts": {
-    "dev": "vite",
     "build": "node scripts/build_jekyll.js",
-    "build:vite": "vite build",
     "build:jekyll": "node scripts/build_jekyll.js",
     "preview": "npx serve dist",
     "test": "node --test test/*.test.js",
     "start": "npx serve dist"
   },
   "keywords": [
-    "blog.google",
-    "the-keyword",
-    "reverse-engineering",
-    "google-glue",
-    "rea"
+    "lovelace-journal",
+    "jekyll",
+    "engineering-blog",
+    "frontier-ai",
+    "static-site"
   ],
-  "author": "Google DeepMind Antigravity Agent",
-  "license": "UNLICENSED",
+  "author": "The Lovelace Lab",
+  "license": "MIT",
   "devDependencies": {
-    "sass": "^1.108.2",
-    "vite": "^5.4.11"
+    "sass": "^1.108.2"
   },
   "dependencies": {
     "js-yaml": "^5.5.0",

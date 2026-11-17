@@ -102,9 +102,6 @@ async function build() {
     
     console.log(`📂 Copying assets to ${path.basename(outDir)}...`);
     copyDirSync(path.join(ROOT_DIR, 'assets'), path.join(outDir, 'assets'));
-    copyDirSync(path.join(ROOT_DIR, 'static'), path.join(outDir, 'static'));
-    copyDirSync(path.join(ROOT_DIR, 'storage.googleapis.com'), path.join(outDir, 'storage.googleapis.com'));
-    copyDirSync(path.join(ROOT_DIR, 'www.gstatic.com'), path.join(outDir, 'www.gstatic.com'));
   }
 
   // 3. Read posts

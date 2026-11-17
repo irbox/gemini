@@ -58,7 +58,7 @@
       font-size: 0.9375rem;
       color: $color-text-secondary;
       &:hover {
-        color: $google-blue;
+        color: $color-primary;
       }
     }
   }
@@ -84,7 +84,7 @@
       color: $color-text-secondary;
       font-size: 0.875rem;
       &:hover {
-        color: $google-blue;
+        color: $color-primary;
       }
     }
   }
@@ -92,7 +92,7 @@
 
 // Newsletter Component
 .newsletter-banner {
-  background: linear-gradient(135deg, #1a73e8 0%, #4285f4 100%);
+  background: linear-gradient(135deg, $color-brand 0%, #6366f1 100%);
   border-radius: $radius-lg;
   color: #ffffff;
   padding: $spacing-xxl $spacing-xl;

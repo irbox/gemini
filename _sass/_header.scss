@@ -26,7 +26,7 @@
       text-decoration: none;
     }
 
-    .super-g {
+    .brand-icon, .super-g {
       width: 32px;
       height: 32px;
       flex-shrink: 0;
@@ -150,7 +150,7 @@
     text-decoration: none;
 
     &:hover {
-      color: $google-blue;
+      color: $color-primary;
     }
   }
 }

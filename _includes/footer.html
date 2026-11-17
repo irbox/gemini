@@ -3,11 +3,11 @@
     <div class="site-footer__grid">
       <div class="site-footer__brand">
         <div class="brand-logo">
-          <img src="{{ '/static/blogv2/images/super-g-aurora.svg' | relative_url }}" alt="Google" width="28" height="28">
-          <span>The Keyword</span>
+          <img src="{{ '/assets/images/logo.svg' | relative_url }}" alt="The Lovelace Journal Logo" width="28" height="28">
+          <span>The Lovelace Journal</span>
         </div>
         <p class="brand-desc">
-          Official stories, updates, and deep dives into the products and technologies shaping the future from Google.
+          Frontier research, systems engineering, custom silicon, and algorithmic breakthroughs from The Lovelace Lab.
         </p>
       </div>
 
@@ -23,11 +23,11 @@
       </div>
 
       <div>
-        <h4 class="site-footer__col-title">About & Policies</h4>
+        <h4 class="site-footer__col-title">About & Research</h4>
         <ul class="site-footer__links">
           {% for link in site.data.navigation.footer.corporate %}
             <li>
-              <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.title }}</a>
+              <a href="{{ link.url | relative_url }}">{{ link.title }}</a>
             </li>
           {% endfor %}
         </ul>
@@ -47,11 +47,11 @@
 
     <div class="site-footer__bottom">
       <div>
-        © {{ site.time | date: '%Y' }} Google LLC. Built natively with Jekyll on GitHub Pages.
+        © {{ site.time | date: '%Y' }} The Lovelace Journal. Published under open research and MIT license.
       </div>
       <div class="site-footer__social">
         <a href="{{ '/feed.xml' | relative_url }}">RSS Feed</a>
-        <a href="{{ '/about/' | relative_url }}">About</a>
+        <a href="{{ '/about/' | relative_url }}">About The Journal</a>
       </div>
     </div>
   </div>

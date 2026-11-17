@@ -4,7 +4,7 @@ layout: default
 {% assign author = site.data.authors[page.author] %}
 <article class="post-layout container">
   <nav class="post-layout__breadcrumbs" aria-label="Breadcrumb">
-    <a href="{{ '/' | relative_url }}">The Keyword</a>
+    <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
     <span class="sep">/</span>
     <a href="{{ '/categories/#' | append: page.categories.first | relative_url }}">
       {{ page.categories.first | replace: "-", " " | capitalize }}
@@ -62,7 +62,7 @@ layout: default
   </div>
 
   <div class="post-layout__related">
-    <h3 style="font-family: 'Product Sans', sans-serif; font-size: 1.5rem; margin-bottom: 24px;">More in {{ page.categories.first | replace: "-", " " | capitalize }}</h3>
+    <h3 style="font-family: inherit; font-size: 1.5rem; margin-bottom: 24px;">More in {{ page.categories.first | replace: "-", " " | capitalize }}</h3>
     <div class="stories-grid">
       {% assign count = 0 %}
       {% for post in site.posts %}
