@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<div class="container">
+  {% assign featured_post = site.posts | where: "featured", true | first | default: site.posts.first %}
+  {% include hero.html post=featured_post %}
+
+  <div class="section-header">
+    <h2 class="section-header__title">Latest Stories</h2>
+    <div class="section-header__filter">
+      <button class="filter-tab is-active" data-filter-tab="all">All</button>
+      {% for cat in site.data.categories %}
+        <button class="filter-tab" data-filter-tab="{{ cat.slug }}">{{ cat.name }}</button>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="stories-grid">
+    {% for post in site.posts %}
+      {% if post.id != featured_post.id %}
+        {% include article_card.html post=post %}
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  {% include newsletter.html %}
+</div>

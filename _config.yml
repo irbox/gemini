@@ -1,0 +1,79 @@
+# The Keyword - Official Google Blog Jekyll Configuration
+# Jekyll 4.x / GitHub Pages Architecture
+
+# Site metadata
+title: "The Keyword"
+tagline: "News and Stories from Google"
+description: "Get the latest news and stories about Google products, technology and innovation on The Keyword, Google's official blog."
+url: "https://irbox.github.io"
+baseurl: "/gemini"
+locale: "en-US"
+timezone: "America/Los_Angeles"
+author: "Google"
+email: "press@google.com"
+
+# Content Collections & Permalinks
+collections:
+  posts:
+    output: true
+    permalink: /:categories/:year/:month/:day/:title/
+
+# Front Matter Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Google"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# Markdown & Syntax Highlighting
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+
+# Sass / SCSS Configuration
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Supported GitHub Pages Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+
+# Pagination
+paginate: 9
+paginate_path: "/page:num/"
+
+# Files & Directories to Exclude
+exclude:
+  - Gemfile.lock
+  - node_modules/
+  - package.json
+  - package-lock.json
+  - vite.config.js
+  - src/
+  - test/
+  - scripts/
+  - raw_assets/
+  - raw_index.html
+  - extracted_modules_manifest.json
+  - .github/workflows/deploy.yml
+
+# Assets to Include
+include:
+  - assets
+  - static
+  - storage.googleapis.com
+  - www.gstatic.com

@@ -1,0 +1,30 @@
+---
+layout: page
+title: "Explore Stories by Category"
+permalink: /categories/
+---
+<p style="margin-bottom: 32px; font-size: 1.125rem; color: #5f6368;">
+  Browse all stories, articles, and product announcements published across Google's departments and research labs.
+</p>
+
+{% for cat in site.data.categories %}
+  <section id="{{ cat.slug }}" style="margin-bottom: 48px; scroll-margin-top: 80px;">
+    <div style="display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 20px; border-bottom: 2px solid #f1f3f4; padding-bottom: 8px;">
+      <h2 style="font-family: 'Product Sans', sans-serif; font-size: 1.75rem; color: #202124;">{{ cat.name }}</h2>
+      <span style="font-size: 0.9375rem; color: #5f6368;">{{ cat.description }}</span>
+    </div>
+
+    <div class="stories-grid">
+      {% assign count = 0 %}
+      {% for post in site.posts %}
+        {% if post.categories contains cat.slug %}
+          {% include article_card.html post=post %}
+          {% assign count = count | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+      {% if count == 0 %}
+        <p style="color: #80868b; font-style: italic;">No stories currently listed in this category.</p>
+      {% endif %}
+    </div>
+  </section>
+{% endfor %}

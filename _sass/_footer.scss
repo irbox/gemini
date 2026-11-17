@@ -1,0 +1,159 @@
+.site-footer {
+  background-color: $color-bg-surface-variant;
+  border-top: 1px solid $color-border-subtle;
+  padding-top: $spacing-xxl;
+  padding-bottom: $spacing-xl;
+  margin-top: auto;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacing-xl;
+    margin-bottom: $spacing-xxl;
+
+    @media (min-width: 600px) {
+      grid-template-columns: 1.5fr 1fr 1fr;
+    }
+
+    @media (min-width: 992px) {
+      grid-template-columns: 2fr 1.2fr 1.2fr 1.5fr;
+    }
+  }
+
+  &__brand {
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: $spacing-md;
+      color: $color-text-primary;
+      font-family: $font-family-display;
+      font-size: 1.25rem;
+      font-weight: 500;
+    }
+    .brand-desc {
+      font-size: 0.9375rem;
+      color: $color-text-secondary;
+      line-height: 1.6;
+      max-width: 320px;
+    }
+  }
+
+  &__col-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: $color-text-primary;
+    margin-bottom: $spacing-md;
+  }
+
+  &__links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    a {
+      font-size: 0.9375rem;
+      color: $color-text-secondary;
+      &:hover {
+        color: $google-blue;
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: $spacing-lg;
+    border-top: 1px solid $color-border-subtle;
+    font-size: 0.8125rem;
+    color: $color-text-tertiary;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    a {
+      color: $color-text-secondary;
+      font-size: 0.875rem;
+      &:hover {
+        color: $google-blue;
+      }
+    }
+  }
+}
+
+// Newsletter Component
+.newsletter-banner {
+  background: linear-gradient(135deg, #1a73e8 0%, #4285f4 100%);
+  border-radius: $radius-lg;
+  color: #ffffff;
+  padding: $spacing-xxl $spacing-xl;
+  margin-bottom: $spacing-section;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &__title {
+    font-family: $font-family-display;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: $spacing-xs;
+  }
+
+  &__desc {
+    font-size: 1.0625rem;
+    opacity: 0.92;
+    max-width: 520px;
+    margin-bottom: $spacing-lg;
+  }
+
+  &__form {
+    display: flex;
+    width: 100%;
+    max-width: 480px;
+    gap: 8px;
+    flex-direction: column;
+
+    @media (min-width: 480px) {
+      flex-direction: row;
+    }
+
+    input[type="email"] {
+      flex: 1;
+      padding: 12px 18px;
+      border-radius: $radius-full;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      background: #ffffff;
+      font-size: 0.9375rem;
+      color: $color-text-primary;
+      outline: none;
+      &:focus {
+        border-color: #ffffff;
+        box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.35);
+      }
+    }
+
+    button {
+      padding: 12px 24px;
+      border-radius: $radius-full;
+      border: none;
+      background-color: $color-text-primary;
+      color: #ffffff;
+      font-weight: 500;
+      cursor: pointer;
+      transition: $transition-default;
+      &:hover {
+        background-color: #000000;
+      }
+    }
+  }
+}

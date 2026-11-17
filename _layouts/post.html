@@ -1,0 +1,76 @@
+---
+layout: default
+---
+{% assign author = site.data.authors[page.author] %}
+<article class="post-layout container">
+  <nav class="post-layout__breadcrumbs" aria-label="Breadcrumb">
+    <a href="{{ '/' | relative_url }}">The Keyword</a>
+    <span class="sep">/</span>
+    <a href="{{ '/categories/#' | append: page.categories.first | relative_url }}">
+      {{ page.categories.first | replace: "-", " " | capitalize }}
+    </a>
+  </nav>
+
+  <header class="post-layout__header">
+    <div class="post-layout__category">
+      <span class="badge badge--primary">
+        {{ page.categories.first | replace: "-", " " | capitalize }}
+      </span>
+    </div>
+
+    <h1 class="post-layout__title">{{ page.title }}</h1>
+
+    {% if page.description %}
+      <p class="post-layout__lead">{{ page.description }}</p>
+    {% endif %}
+
+    <div class="post-layout__author-bar">
+      <div class="author-info">
+        {% if author.avatar %}
+          <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}" class="author-avatar">
+        {% endif %}
+        <div>
+          <div class="author-name">{{ author.name | default: page.author }}</div>
+          {% if author.role %}<div class="author-role">{{ author.role }}</div>{% endif %}
+        </div>
+      </div>
+      <div>
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+        <span>•</span>
+        <span>{{ page.read_time | default: "4 min read" }}</span>
+      </div>
+    </div>
+  </header>
+
+  {% if page.hero_image %}
+    <div class="post-layout__hero-image">
+      <img src="{{ page.hero_image | relative_url }}" alt="{{ page.title | escape }}">
+    </div>
+  {% endif %}
+
+  <div class="post-layout__body">
+    {{ content }}
+  </div>
+
+  <div class="post-layout__share">
+    <a href="{{ '/' | relative_url }}" class="btn btn--outline">← Back to all stories</a>
+    <div style="font-size: 0.875rem; color: #5f6368;">
+      Share story: 
+      <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&url={{ page.url | absolute_url }}" target="_blank" rel="noopener">Twitter / X</a> • 
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url }}" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+
+  <div class="post-layout__related">
+    <h3 style="font-family: 'Product Sans', sans-serif; font-size: 1.5rem; margin-bottom: 24px;">More in {{ page.categories.first | replace: "-", " " | capitalize }}</h3>
+    <div class="stories-grid">
+      {% assign count = 0 %}
+      {% for post in site.posts %}
+        {% if post.url != page.url and post.categories.first == page.categories.first and count < 3 %}
+          {% include article_card.html post=post %}
+          {% assign count = count | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</article>

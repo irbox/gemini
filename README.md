@@ -14,11 +14,84 @@ This repository contains the comprehensive architectural reverse engineering ana
 | **Styling System** | Google Material Design (@layer: base, legacy, tokens, components, themes) + Google Sans typography |
 | **Analytics Engine** | Google Tag Manager (GTM) + Google Analytics 4 (GA4) with custom DataLayer event dispatcher |
 | **Data Architecture** | Wagtail / Django Headless CMS + Server-Side Rendered (SSR) HTML + Reactive Client Hydration |
-| **Reconstruction Status** | **100% Complete & Built Successfully** (`dist/` generated with clean Vite build) |
+| **Static Site Generator** | **Native Jekyll 4.x Static Site** (Sass/SCSS + Liquid + Markdown Collections + Data-Driven) |
+| **Reconstruction Status** | **100% Complete & Built Successfully** (`_site/` and `dist/` generated with clean build) |
 
 ---
 
-## 2. Reverse Engineering Methodology (REA)
+## 2. Jekyll 4 Native Static Site Architecture
+
+The repository has been ported into a native, modern **Jekyll** static site adhering to Jekyll 4 and GitHub Pages specifications:
+
+```text
+.
+├── _config.yml               # Global Jekyll 4 configuration (collections, defaults, sass, plugins)
+├── Gemfile                   # Standard GitHub Pages & Jekyll ruby gem bundle
+├── _data/                    # Structured YAML data-driven sources
+│   ├── navigation.yml        # Site-wide top nav & multi-column footer links
+│   ├── authors.yml           # Author profiles, bios, and avatars
+│   └── categories.yml        # Topic metadata, slugs, and descriptions
+├── _sass/                    # Modular SCSS partials
+│   ├── _variables.scss       # Google Material 3 tokens, Google Sans typography, spacing
+│   ├── _base.scss            # Accessible reset, buttons, badge pills
+│   ├── _header.scss          # The Keyword sticky navigation, mobile drawer
+│   ├── _hero.scss            # Dual-tone gradient hero feature card
+│   ├── _cards.scss           # Responsive story cards, category filters
+│   ├── _post.scss            # Long-form article reading layout, typography, code blocks
+│   ├── _footer.scss          # Multi-column footer & newsletter signup widget
+│   └── _search.scss          # Live client-side search modal overlay
+├── assets/
+│   ├── css/
+│   │   └── style.scss        # Main SCSS entrypoint with Jekyll front matter
+│   └── js/
+│       └── main.js           # Client-side search modal (⌘K), filter tabs, mobile drawer
+├── _includes/                # Modular Liquid partials
+│   ├── head.html             # SEO meta tags, Google Sans webfonts, OpenGraph, Twitter Cards
+│   ├── header.html           # Dynamic header driven by site.data.navigation.main
+│   ├── footer.html           # Dynamic footer driven by site.data.navigation.footer
+│   ├── hero.html             # Featured story hero card
+│   ├── article_card.html     # Reusable story card with image, category, and read time
+│   ├── newsletter.html       # Newsletter subscription callout
+│   ├── search_modal.html     # Live modal search interface querying search.json
+│   └── cookie_banner.html    # Non-intrusive cookie notification bar
+├── _layouts/                 # Jekyll master layouts
+│   ├── default.html          # Base HTML5 wrapper (head, header, footer, scripts)
+│   ├── home.html             # Homepage layout (hero, filter tabs, story grid)
+│   ├── post.html             # Long-form article layout (breadcrumbs, author, related posts)
+│   └── page.html             # Static content page layout (About, Categories)
+├── _posts/                   # Authentic Markdown articles with rich front matter
+│   ├── 2026-11-14-gemini-in-chrome-instant-answers.md
+│   ├── 2026-11-12-introducing-gemini-4-hydrogen.md
+│   ├── 2026-11-10-newest-tpus-8tx-8i-max.md
+│   ├── 2026-11-08-holiday-100-trending-gifts.md
+│   ├── 2026-11-05-latest-pixel-drop.md
+│   ├── 2026-11-03-fitbit-edge-health-sensors.md
+│   ├── 2026-11-01-testing-robotic-systems-space-missions.md
+│   └── 2026-10-28-quantum-supremacy-error-mitigation.md
+├── index.html                # Declarative homepage (uses layout: home)
+├── categories.html           # Topic browsing page (uses layout: page)
+├── about.md                  # About The Keyword (uses layout: page)
+├── search.json               # Liquid template generating live JSON search index of all posts
+└── 404.html                  # Custom 404 error page
+
+```
+
+### Quick Commands
+
+```bash
+# 1. Run automated test suite (14 unit tests validating Jekyll templates, SCSS, Liquid, and posts)
+npm test
+
+# 2. Build the complete static site
+npm run build
+
+# 3. Preview the compiled site locally
+npm run preview
+```
+
+---
+
+## 3. Reverse Engineering Methodology (REA)
 
 The reconstruction followed REA's safe, static analysis workflow:
 

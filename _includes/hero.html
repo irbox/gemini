@@ -1,0 +1,38 @@
+{% assign hero_post = include.post %}
+{% if hero_post %}
+  {% assign author = site.data.authors[hero_post.author] %}
+  <section class="hero-section">
+    <div class="hero-section__card">
+      <div class="hero-section__content">
+        <div class="hero-section__meta">
+          <a href="{{ '/categories/#' | append: hero_post.categories.first | relative_url }}" class="badge badge--primary">
+            {{ hero_post.categories.first | replace: "-", " " | capitalize }}
+          </a>
+          <span style="font-size: 0.8125rem; color: #80868b;">{{ hero_post.date | date: "%B %-d, %Y" }}</span>
+        </div>
+
+        <h1 class="hero-section__title">
+          <a href="{{ hero_post.url | relative_url }}">{{ hero_post.title }}</a>
+        </h1>
+
+        <p class="hero-section__excerpt">
+          {{ hero_post.description | default: hero_post.excerpt | strip_html | truncatewords: 35 }}
+        </p>
+
+        <div class="hero-section__footer">
+          {% if author %}
+            <span>By <strong>{{ author.name }}</strong></span>
+            <span>•</span>
+          {% endif %}
+          <span>{{ hero_post.read_time | default: "4 min read" }}</span>
+        </div>
+      </div>
+
+      <div class="hero-section__media">
+        <a href="{{ hero_post.url | relative_url }}">
+          <img src="{{ hero_post.hero_image | relative_url }}" alt="{{ hero_post.title | escape }}" class="hero-section__img" loading="eager">
+        </a>
+      </div>
+    </div>
+  </section>
+{% endif %}

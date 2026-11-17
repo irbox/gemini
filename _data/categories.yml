@@ -1,0 +1,23 @@
+- name: "Innovation & AI"
+  slug: "innovation-and-ai"
+  description: "Breakthroughs in Artificial Intelligence, machine learning models, and deep scientific research from Google DeepMind."
+  color: "#1a73e8"
+  icon: "spark"
+
+- name: "Products & Platforms"
+  slug: "products-and-platforms"
+  description: "Latest updates, hardware feature drops, and product announcements across Pixel, Android, Chrome, and Search."
+  color: "#ea4335"
+  icon: "device"
+
+- name: "Technology"
+  slug: "technology"
+  description: "Deep technical dives into TPU hardware silicon, developer APIs, cloud architectures, and planetary networks."
+  color: "#fbbc04"
+  icon: "code"
+
+- name: "Company News"
+  slug: "company-news"
+  description: "Stories celebrating our global culture, community initiatives, environmental sustainability, and open-source contributions."
+  color: "#34a853"
+  icon: "globe"

@@ -1,0 +1,32 @@
+{% assign item = include.post %}
+{% assign author = site.data.authors[item.author] %}
+<article class="story-card" data-story-category="{{ item.categories.first }}">
+  {% if item.hero_image %}
+    <div class="story-card__media">
+      <a href="{{ item.url | relative_url }}">
+        <img src="{{ item.hero_image | relative_url }}" alt="{{ item.title | escape }}" class="story-card__img" loading="lazy">
+      </a>
+    </div>
+  {% endif %}
+
+  <div class="story-card__content">
+    <div class="story-card__eyebrow">
+      <a href="{{ '/categories/#' | append: item.categories.first | relative_url }}" class="badge">
+        {{ item.categories.first | replace: "-", " " | capitalize }}
+      </a>
+    </div>
+
+    <h3 class="story-card__title">
+      <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+    </h3>
+
+    <p class="story-card__excerpt">
+      {{ item.description | default: item.excerpt | strip_html | truncatewords: 22 }}
+    </p>
+
+    <div class="story-card__footer">
+      <span>{{ item.date | date: "%B %-d, %Y" }}</span>
+      <span>{{ item.read_time | default: "3 min" }}</span>
+    </div>
+  </div>
+</article>

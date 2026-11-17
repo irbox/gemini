@@ -5,10 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
+    "build": "node scripts/build_jekyll.js",
+    "build:vite": "vite build",
+    "build:jekyll": "node scripts/build_jekyll.js",
+    "preview": "npx serve dist",
     "test": "node --test test/*.test.js",
-    "start": "npx serve ."
+    "start": "npx serve dist"
   },
   "keywords": [
     "blog.google",
@@ -20,6 +22,12 @@
   "author": "Google DeepMind Antigravity Agent",
   "license": "UNLICENSED",
   "devDependencies": {
+    "sass": "^1.108.2",
     "vite": "^5.4.11"
+  },
+  "dependencies": {
+    "js-yaml": "^5.5.0",
+    "liquidjs": "^10.30.1",
+    "marked": "^18.2.0"
   }
 }
