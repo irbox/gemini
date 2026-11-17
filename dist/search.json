@@ -1,0 +1,67 @@
+[
+  
+  {
+    "title": "Contextual In-Browser Neural Synthesis: Real-Time Research Assistance",
+    "url": "/gemini/frontier-ai/2026/11/14/contextual-in-browser-neural-synthesis/",
+    "category": "Frontier ai",
+    "date": "November 14, 2026",
+    "description": "How in-browser neural coprocessors enable instant technical paper synthesis, visual grounding across SVG charts, and interactive code verification."
+  },
+  
+  {
+    "title": "Introducing Hydrogen-4: Next-Generation Foundational Reasoning Models",
+    "url": "/gemini/frontier-ai/2026/11/12/introducing-hydrogen-4-foundational-reasoning/",
+    "category": "Frontier ai",
+    "date": "November 12, 2026",
+    "description": "Hydrogen-4 achieves record benchmark results in multimodal comprehension, mathematical deduction, and self-verifying agent workflows."
+  },
+  
+  {
+    "title": "Next-Gen Matrix Silicon: Custom Microarchitectures for Agentic Computing",
+    "url": "/gemini/hardware-accelerators/2026/11/10/next-gen-matrix-silicon-accelerators/",
+    "category": "Hardware accelerators",
+    "date": "November 10, 2026",
+    "description": "Meet Matrix-8X and Matrix-8i: Custom-engineered 3nm silicon designed to power trillion-parameter models with direct-to-chip microfluidic cooling."
+  },
+  
+  {
+    "title": "Annual Consumer Hardware Retrospective: The Rise of Intelligent Spatial Devices",
+    "url": "/gemini/biosensors-health/2026/11/08/annual-consumer-hardware-retrospective/",
+    "category": "Biosensors health",
+    "date": "November 8, 2026",
+    "description": "Analyzing telemetry data and market adoption patterns across intelligent rings, lightweight smart glasses, and ambient computing nodes."
+  },
+  
+  {
+    "title": "Edge Coprocessors & Adaptive Power Tuning in Modern Mobile Platforms",
+    "url": "/gemini/hardware-accelerators/2026/11/05/edge-coprocessors-power-optimization/",
+    "category": "Hardware accelerators",
+    "date": "November 5, 2026",
+    "description": "How asymmetric heterogeneous cores and on-device neural coprocessors dynamically tune voltage states to gain 4+ hours of battery life."
+  },
+  
+  {
+    "title": "The Edge Biomarker Platform: Advanced Biosensors in Ultra-Thin Form Factors",
+    "url": "/gemini/biosensors-health/2026/11/03/edge-biomarker-wearable-platform/",
+    "category": "Biosensors health",
+    "date": "November 3, 2026",
+    "description": "How multi-wavelength optical PPG arrays and continuous electrodermal tracking fit inside an 8.2mm sculpted aluminum enclosure."
+  },
+  
+  {
+    "title": "Autonomous Pathfinding for Deep Space Robotics: High-Altitude Terrain Navigation",
+    "url": "/gemini/autonomous-systems/2026/11/01/autonomous-pathfinding-deep-space-robotics/",
+    "category": "Autonomous systems",
+    "date": "November 1, 2026",
+    "description": "Overcoming speed-of-light communication lag on extraterrestrial bodies using self-contained spatial perception and energy-optimal traversal graphs."
+  },
+  
+  {
+    "title": "Fault-Tolerant Surface Codes: Scaling Logical Qubits in Cryogenic Processors",
+    "url": "/gemini/quantum-computing/2026/10/28/scaling-logical-qubits-fault-tolerant-surface-codes/",
+    "category": "Quantum computing",
+    "date": "October 28, 2026",
+    "description": "Experimental demonstrations showing that larger surface code lattices suppress logical error rates, proving the viability of scalable quantum computers."
+  }
+  
+]
