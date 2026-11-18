@@ -176,3 +176,34 @@ test('7. Dynamic homepage rendering through Liquid engine', async () => {
   assert.ok(indexContent.length < 1000, 'index.html should be a clean template, not a monolithic HTML dump');
   assert.ok(indexContent.includes('layout: home'), 'index.html should specify layout: home');
 });
+
+test('8. Research taxonomy, pages, and SSG dist generation', () => {
+  const dataFiles = [
+    '_data/research_areas.yml',
+    '_data/publications.yml',
+    '_data/projects.yml',
+    '_data/people.yml'
+  ];
+  for (const df of dataFiles) {
+    assert.ok(fs.existsSync(path.join(ROOT_DIR, df)), `${df} must exist`);
+  }
+
+  const pages = ['research-areas.html', 'publications.html', 'projects.html', 'people.html'];
+  for (const page of pages) {
+    assert.ok(fs.existsSync(path.join(ROOT_DIR, page)), `${page} must exist`);
+  }
+
+  const distPages = [
+    'dist/research-areas/index.html',
+    'dist/publications/index.html',
+    'dist/projects/index.html',
+    'dist/people/index.html',
+    'dist/search.json'
+  ];
+  for (const dp of distPages) {
+    assert.ok(fs.existsSync(path.join(ROOT_DIR, dp)), `${dp} must exist in dist`);
+  }
+
+  const searchContent = JSON.parse(fs.readFileSync(path.join(ROOT_DIR, 'dist/search.json'), 'utf8'));
+  assert.ok(searchContent.length >= 10, 'search.json should index both articles and publications');
+});

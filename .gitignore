@@ -1,6 +1,7 @@
 node_modules/
 dist/
 _site/
+target/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata

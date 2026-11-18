@@ -16,7 +16,7 @@
         <ul class="site-footer__links">
           {% for cat in site.data.categories %}
             <li>
-              <a href="{{ '/categories/#' | append: cat.slug | relative_url }}">{{ cat.name }}</a>
+              <a href="{{ ('/categories/#' ~ cat.slug) | relative_url }}">{{ cat.name }}</a>
             </li>
           {% endfor %}
         </ul>
@@ -38,7 +38,7 @@
         <ul class="site-footer__links">
           {% for link in site.data.navigation.footer.social %}
             <li>
-              <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.name }}</a>
+              <a href="{{ link.url | safe }}" target="_blank" rel="noopener noreferrer">{{ link.name }}</a>
             </li>
           {% endfor %}
         </ul>
@@ -47,7 +47,7 @@
 
     <div class="site-footer__bottom">
       <div>
-        © {{ site.time | date: '%Y' }} The Lovelace Journal. Published under open research and MIT license.
+        © 2026 The Lovelace Journal. Published under open research and MIT license.
       </div>
       <div class="site-footer__social">
         <a href="{{ '/feed.xml' | relative_url }}">RSS Feed</a>

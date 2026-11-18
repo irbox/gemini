@@ -1,0 +1,40 @@
+---
+layout: page
+title: "Publications Catalog"
+permalink: /publications/
+---
+
+<p class="lead-paragraph" style="font-size: 1.25rem; color: #52525b; margin-bottom: 32px; line-height: 1.6;">
+  Peer-reviewed conference papers, journal articles, and preprints authored by researchers at The Lovelace Lab.
+</p>
+
+<div class="publications-list" style="display: flex; flex-direction: column; gap: 28px;">
+  {% for pub in site.data.publications %}
+    <article class="pub-card" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
+        <span class="badge badge--primary">{{ pub.area }}</span>
+        <span style="font-size: 0.875rem; font-weight: 600; color: #4f46e5;">{{ pub.venue }}</span>
+      </div>
+
+      <h2 style="font-size: 1.35rem; font-weight: 600; color: #18181b; margin-bottom: 8px; line-height: 1.3;">
+        {{ pub.title }}
+      </h2>
+
+      <p style="font-size: 0.9375rem; color: #71717a; margin-bottom: 12px; font-weight: 500;">
+        {{ pub.authors | join(", ") }} • {{ pub.year }}
+      </p>
+
+      <p style="font-size: 0.9375rem; color: #3f3f46; line-height: 1.6; margin-bottom: 16px;">
+        {{ pub.abstract }}
+      </p>
+
+      <div style="display: flex; gap: 12px; align-items: center;">
+        <button type="button" class="btn btn--outline" style="padding: 6px 14px; font-size: 0.8125rem;" onclick="const el = document.getElementById('bib-{{ pub.id }}'); el.style.display = el.style.display === 'none' ? 'block' : 'none';">
+          BibTeX Citation
+        </button>
+      </div>
+
+      <pre id="bib-{{ pub.id }}" style="display: none; margin-top: 16px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px; font-size: 0.8125rem; overflow-x: auto; color: #18181b;"><code>{{ pub.bibtex }}</code></pre>
+    </article>
+  {% endfor %}
+</div>

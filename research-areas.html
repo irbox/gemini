@@ -1,0 +1,28 @@
+---
+layout: page
+title: "Research Focus Areas"
+permalink: /research-areas/
+---
+
+<p class="lead-paragraph" style="font-size: 1.25rem; color: #52525b; margin-bottom: 40px; line-height: 1.6;">
+  The Lovelace Lab conducts open, foundational computing research spanning algorithmic theory, custom matrix silicon, fault-tolerant quantum error correction, and bio-cybernetic interfaces.
+</p>
+
+{% for pillar in site.data.research_areas %}
+  <section id="{{ pillar.slug }}" style="margin-bottom: 56px; scroll-margin-top: 80px; border-bottom: 1px solid #e2e8f0; padding-bottom: 40px;">
+    <div style="margin-bottom: 24px;">
+      <span class="badge badge--primary" style="margin-bottom: 8px;">Research Pillar</span>
+      <h2 style="font-size: 2rem; font-weight: 600; color: #18181b; margin-top: 6px; margin-bottom: 12px;">{{ pillar.pillar }}</h2>
+      <p style="font-size: 1.0625rem; color: #52525b; max-width: 800px; line-height: 1.6;">{{ pillar.description }}</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px;">
+      {% for area in pillar.areas %}
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px; transition: transform 0.2s, box-shadow 0.2s;">
+          <h3 style="font-size: 1.15rem; font-weight: 600; color: #18181b; margin-bottom: 8px;">{{ area.title }}</h3>
+          <p style="font-size: 0.9375rem; color: #52525b; line-height: 1.5;">{{ area.summary }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+{% endfor %}

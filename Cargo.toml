@@ -1,0 +1,16 @@
+[package]
+name = "lovelace-ssg"
+version = "1.0.0"
+edition = "2021"
+description = "A fast, authentic Static Site Generator written in Rust for The Lovelace Journal & Research Lab"
+authors = ["The Lovelace Lab"]
+license = "MIT"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.9"
+serde_json = "1.0"
+pulldown-cmark = "0.13"
+minijinja = { version = "3.1", features = ["json", "serde"] }
+walkdir = "2.5"
+grass = "0.13"

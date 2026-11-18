@@ -1,0 +1,53 @@
+- id: "ada-lovelace"
+  name: "Ada Lovelace"
+  title: "Director of Foundational Computing & Reasoning"
+  avatar: "/assets/images/authors/ada-lovelace.svg"
+  bio: "Directs foundational cognitive architecture research and formal algorithm synthesis. Pioneered the vision of algebraic computational looms."
+  interests: ["Foundational Reasoning", "Neural-Symbolic Synthesis", "MCTS", "In-Browser Inference"]
+  papers_count: 14
+  github: "https://github.com/irbox/gemini"
+
+- id: "kai-chen"
+  name: "Kai Chen"
+  title: "Director of Custom Silicon & Photonic Fabrics"
+  avatar: "/assets/images/authors/kai-chen.svg"
+  bio: "Leads custom silicon microarchitecture and optical interposer routing. Previously designed multi-teraflop systolic accelerators."
+  interests: ["Systolic Silicon", "Micro-Ring Photonics", "Near-Memory Computing", "Thermal Gating"]
+  papers_count: 22
+  github: "https://github.com/irbox/gemini"
+
+- id: "marcus-vance"
+  name: "Marcus Vance"
+  title: "Distinguished Fellow in Quantum Error Mitigation"
+  avatar: "/assets/images/authors/marcus-vance.svg"
+  bio: "Specializes in distance-7 planar surface code architectures and sub-microsecond FPGA error-decoding pipelines."
+  interests: ["Surface Codes", "Cryogenic Control", "Fault Tolerance", "Transmon Qubits"]
+  papers_count: 19
+  github: "https://github.com/irbox/gemini"
+
+- id: "clara-shannon"
+  name: "Clara Shannon"
+  title: "Principal Research Scientist, Information Theory"
+  avatar: "/assets/images/authors/clara-shannon.svg"
+  bio: "Focuses on mathematical limits of inference compression, entropy-constrained decoding, and formal safety guarantees."
+  interests: ["Information Theory", "Lossless KV Compression", "Algorithmic Bounds", "Cryptography"]
+  papers_count: 16
+  github: "https://github.com/irbox/gemini"
+
+- id: "elena-rostova"
+  name: "Elena Rostova"
+  title: "Principal Scientist, Autonomous Systems & Robotics"
+  avatar: "/assets/images/authors/elena-rostova.svg"
+  bio: "Architect of visual-inertial SLAM and distributed multi-agent consensus algorithms for extreme environment space rovers."
+  interests: ["Deep-Space Robotics", "Visual SLAM", "Event Cameras", "Radiation-Hard Compute"]
+  papers_count: 18
+  github: "https://github.com/irbox/gemini"
+
+- id: "sarah-jenkins"
+  name: "Sarah Jenkins, M.D., Ph.D."
+  title: "Senior Research Scientist, Biosensors & Edge Health"
+  avatar: "/assets/images/authors/sarah-jenkins.svg"
+  bio: "Develops continuous optical biomarker sensing arrays and low-power spiking neural network edge firmware."
+  interests: ["Micro-PPG Arrays", "Spiking Networks", "Hemodynamic Telemetry", "Wearable Silicon"]
+  papers_count: 12
+  github: "https://github.com/irbox/gemini"

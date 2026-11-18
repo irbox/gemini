@@ -1,0 +1,113 @@
+- id: "hydrogen-mcts"
+  title: "Monte Carlo Trajectory Synthesis in Recursive Reasoning Models"
+  authors: ["Ada Lovelace", "Marcus Vance", "Clara Shannon"]
+  venue: "NeurIPS 2026 (Oral)"
+  year: 2026
+  area: "Foundational ML & Reasoning"
+  slug: "foundational-ml"
+  abstract: "We formulate recursive reasoning as stochastic pathfinding across dynamic inference graphs. By coupling an adaptive value estimator with tree-search rollout policies, our model Hydrogen-4 achieves a 42% reduction in search branching factor while demonstrating superhuman verification accuracy on formal proof benchmarks."
+  pdf_url: "#"
+  bibtex: |
+    @inproceedings{lovelace2026mcts,
+      title={Monte Carlo Trajectory Synthesis in Recursive Reasoning Models},
+      author={Lovelace, Ada and Vance, Marcus and Shannon, Clara},
+      booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+      year={2026}
+    }
+
+- id: "matrix-photonic"
+  title: "Sub-Picosecond Optical Routing in Scalable Matrix Silicon"
+  authors: ["Kai Chen", "Ada Lovelace", "Elena Rostova"]
+  venue: "IEEE Micro / Hot Chips 2026"
+  year: 2026
+  area: "Hardware & Custom Silicon"
+  slug: "hardware-silicon"
+  abstract: "Modern transformer workloads are constrained by off-chip bandwidth bottlenecks. We introduce a hybrid 3nm silicon coprocessor integrating CMOS systolic tensor execution cores with on-interposer micro-ring photonic resonators, achieving 18.4 TB/s bisection bandwidth at 0.38 pJ/bit transmission energy."
+  pdf_url: "#"
+  bibtex: |
+    @article{chen2026photonic,
+      title={Sub-Picosecond Optical Routing in Scalable Matrix Silicon},
+      author={Chen, Kai and Lovelace, Ada and Rostova, Elena},
+      journal={IEEE Micro},
+      volume={46},
+      number={3},
+      pages={44--56},
+      year={2026}
+    }
+
+- id: "surface-code-distance7"
+  title: "Fault-Tolerant Surface Codes at Distance-7 on 128 Superconducting Transmons"
+  authors: ["Marcus Vance", "Clara Shannon"]
+  venue: "PRX Quantum 2026"
+  year: 2026
+  area: "Quantum & Error Mitigation"
+  slug: "quantum-systems"
+  abstract: "We demonstrate continuous fault-tolerant syndromic decoding on a planar square lattice of 128 transmon qubits. Operating at 12 mK, our distance-7 surface code achieves a logical error suppression factor of Lambda = 2.41 per code distance increment, surpassing the fault-tolerance threshold."
+  pdf_url: "#"
+  bibtex: |
+    @article{vance2026surfacecode,
+      title={Fault-Tolerant Surface Codes at Distance-7 on 128 Superconducting Transmons},
+      author={Vance, Marcus and Shannon, Clara},
+      journal={PRX Quantum},
+      volume={7},
+      number={2},
+      pages={020341},
+      year={2026}
+    }
+
+- id: "in-browser-shaders"
+  title: "Zero-Copy KV-Cache Streaming via WebGPU Compute Shaders"
+  authors: ["Ada Lovelace", "Kai Chen"]
+  venue: "ACM Web3D / Systems 2026"
+  year: 2026
+  area: "Applied AI & Sciences"
+  slug: "applied-ai"
+  abstract: "Executing multi-billion parameter foundational models in client web browsers requires overcoming memory transfer overhead between JavaScript heaps and GPU VRAM. We design a zero-copy circular ring-buffer in WebGPU compute pipelines that sustains 48 tokens/second streaming on consumer laptops."
+  pdf_url: "#"
+  bibtex: |
+    @inproceedings{lovelace2026webgpu,
+      title={Zero-Copy KV-Cache Streaming via WebGPU Compute Shaders},
+      author={Lovelace, Ada and Chen, Kai},
+      booktitle={Proceedings of the ACM Web3D Conference},
+      pages={112--124},
+      year={2026}
+    }
+
+- id: "chrono-ppg"
+  title: "Continuous Photometric Micro-Sensor Arrays for On-Die Hemodynamic Profiling"
+  authors: ["Sarah Jenkins", "Elena Rostova"]
+  venue: "Nature Digital Medicine 2026"
+  year: 2026
+  area: "Biosensors & Health"
+  slug: "biosensors-health"
+  abstract: "We introduce a wearable multi-spectral photoplethysmography sensor consuming less than 1.2 mW active power. Using an embedded spiking neural network running on an on-die 16-bit RISC-V microcontroller, the system achieves 99.4% correlation with invasive arterial pressure lines."
+  pdf_url: "#"
+  bibtex: |
+    @article{jenkins2026ppg,
+      title={Continuous Photometric Micro-Sensor Arrays for On-Die Hemodynamic Profiling},
+      author={Jenkins, Sarah and Rostova, Elena},
+      journal={npj Digital Medicine},
+      volume={9},
+      number={1},
+      pages={88},
+      year={2026}
+    }
+
+- id: "astra-slam"
+  title: "Radiation-Hardened Asynchronous Visual SLAM for Deep-Space Interplanetary Explorers"
+  authors: ["Elena Rostova", "Marcus Vance"]
+  venue: "IEEE Transactions on Robotics (T-RO) 2026"
+  year: 2026
+  area: "Autonomous Robotics"
+  slug: "autonomous-robotics"
+  abstract: "Deep-space surface explorers cannot rely on GPS or high-frequency Earth communication. We present an event-camera visual-inertial SLAM architecture hardened against single-event upsets (SEU) with asynchronous consensus across triply-redundant compute nodes."
+  pdf_url: "#"
+  bibtex: |
+    @article{rostova2026astraslam,
+      title={Radiation-Hardened Asynchronous Visual SLAM for Deep-Space Interplanetary Explorers},
+      author={Rostova, Elena and Vance, Marcus},
+      journal={IEEE Transactions on Robotics},
+      volume={42},
+      pages={1302--1319},
+      year={2026}
+    }

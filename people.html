@@ -1,0 +1,41 @@
+---
+layout: page
+title: "Research Fellows & Scientists"
+permalink: /people/
+---
+
+<p class="lead-paragraph" style="font-size: 1.25rem; color: #52525b; margin-bottom: 32px; line-height: 1.6;">
+  Meet the research scientists, hardware architects, and fellows advancing frontier computing at The Lovelace Lab.
+</p>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px;">
+  {% for person in site.data.people %}
+    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
+      <div style="display: flex; gap: 16px; align-items: center; margin-bottom: 16px;">
+        <img src="{{ person.avatar | relative_url }}" alt="{{ person.name }}" style="width: 64px; height: 64px; border-radius: 9999px; object-fit: cover; border: 2px solid #e2e8f0;">
+        <div>
+          <h2 style="font-size: 1.25rem; font-weight: 600; color: #18181b; margin-bottom: 2px;">{{ person.name }}</h2>
+          <div style="font-size: 0.8125rem; color: #4f46e5; font-weight: 500;">{{ person.title }}</div>
+        </div>
+      </div>
+
+      <p style="font-size: 0.9375rem; color: #52525b; line-height: 1.5; margin-bottom: 16px; flex-grow: 1;">
+        {{ person.bio }}
+      </p>
+
+      <div style="border-top: 1px solid #f1f5f9; padding-top: 12px; margin-bottom: 12px;">
+        <div style="font-size: 0.75rem; font-weight: 600; text-transform: uppercase; color: #71717a; margin-bottom: 6px;">Research Focus</div>
+        <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+          {% for interest in person.interests %}
+            <span class="badge" style="font-size: 0.6875rem; padding: 2px 8px;">{{ interest }}</span>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #f1f5f9; padding-top: 12px; font-size: 0.8125rem; color: #71717a;">
+        <span>{{ person.papers_count }} Publications</span>
+        <a href="{{ person.github }}" target="_blank" rel="noopener noreferrer" style="color: #4f46e5; font-weight: 500;">GitHub Profile →</a>
+      </div>
+    </div>
+  {% endfor %}
+</div>

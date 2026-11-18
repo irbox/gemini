@@ -29,6 +29,22 @@ const engine = new Liquid({
   jekyllInclude: true
 });
 
+engine.registerTag('set', {
+  parse: function(token) {
+    const match = token.args.match(/^(\w+)\s*=\s*(.+)$/);
+    if (match) {
+      this.key = match[1];
+      this.val = match[2];
+    }
+  },
+  render: function*(ctx) {
+    if (this.key && this.val) {
+      const val = yield this.liquid.evalValue(this.val, ctx);
+      ctx.bottom()[this.key] = val;
+    }
+  }
+});
+
 engine.registerFilter('relative_url', function(input) {
   const base = this.context.get(['site', 'baseurl']) || '';
   if (!input) return base;
@@ -217,6 +233,28 @@ async function build() {
       const targetDir = path.join(outDir, 'categories');
       fs.mkdirSync(targetDir, { recursive: true });
       fs.writeFileSync(path.join(targetDir, 'index.html'), fullCatHtml, 'utf8');
+    }
+  }
+
+  // 5b. Render Research Pages
+  const researchPages = ['research-areas', 'publications', 'projects', 'people'];
+  for (const slug of researchPages) {
+    const pagePath = path.join(ROOT_DIR, `${slug}.html`);
+    if (fs.existsSync(pagePath)) {
+      console.log(`📄 Rendering ${slug}.html...`);
+      const raw = fs.readFileSync(pagePath, 'utf8');
+      const parts = raw.split('---');
+      const meta = load(parts[1]);
+      const body = parts.slice(2).join('---');
+
+      const renderedBody = await engine.parseAndRender(body, { site: siteContext, page: meta });
+      const fullHtml = await renderWithLayout(renderedBody, meta, meta.layout || 'page');
+
+      for (const outDir of OUT_DIRS) {
+        const targetDir = path.join(outDir, slug);
+        fs.mkdirSync(targetDir, { recursive: true });
+        fs.writeFileSync(path.join(targetDir, 'index.html'), fullHtml, 'utf8');
+      }
     }
   }
 

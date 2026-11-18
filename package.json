@@ -4,10 +4,10 @@
   "description": "The Lovelace Journal - Modern Jekyll static research publication and engineering blog",
   "type": "module",
   "scripts": {
-    "build": "node scripts/build_jekyll.js",
-    "build:jekyll": "node scripts/build_jekyll.js",
+    "build": "./target/release/lovelace-ssg build",
+    "build:release": "cargo run --release -- build",
     "preview": "npx serve dist",
-    "test": "node --test test/*.test.js",
+    "test": "node --test test/*.test.js && cargo test",
     "start": "npx serve dist"
   },
   "keywords": [

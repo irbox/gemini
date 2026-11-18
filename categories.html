@@ -15,16 +15,11 @@ permalink: /categories/
     </div>
 
     <div class="stories-grid">
-      {% assign count = 0 %}
       {% for post in site.posts %}
-        {% if post.categories contains cat.slug %}
-          {% include article_card.html post=post %}
-          {% assign count = count | plus: 1 %}
+        {% if cat.slug in (post.categories or post.meta.categories) %}
+          {% include "article_card.html" %}
         {% endif %}
       {% endfor %}
-      {% if count == 0 %}
-        <p style="color: #a1a1aa; font-style: italic;">No stories currently listed in this category.</p>
-      {% endif %}
     </div>
   </section>
 {% endfor %}
