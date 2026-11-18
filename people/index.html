@@ -1,471 +1,533 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="base-url" content="/gemini">
+  <title>People – Google Research</title>
+  <meta name="description" content="Meet the researchers, fellows, and scientists driving advancements at Google Research.">
+  <link rel="canonical" href="https://irbox.github.io/gemini/">
 
-<title>Research Fellows &amp; Scientists | The Lovelace Journal</title>
-<meta name="description" content="Original perspectives, breakthroughs, and architectural insights in artificial intelligence, custom silicon, quantum computing, and autonomous robotics."/>
+  <!-- Open Graph -->
+  <meta property="og:title" content="People – Google Research">
+  <meta property="og:description" content="Meet the researchers, fellows, and scientists driving advancements at Google Research.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://irbox.github.io/gemini/">
 
-<!-- Main Compiled Stylesheet -->
-<link rel="stylesheet" href="/gemini/assets/css/style.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://www.gstatic.com/images/branding/googleg_gradient/1x/googleg_gradient_standard_20dp.png">
 
-<!-- Open Graph / Social Meta -->
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Research Fellows &amp; Scientists"/>
-<meta property="og:description" content="Original perspectives, breakthroughs, and architectural insights in artificial intelligence, custom silicon, quantum computing, and autonomous robotics." />
-<meta property="og:image" content="https://irbox.github.io/gemini/assets/images/posts/post-hydrogen.svg" />
-<meta property="og:url" content="https://irbox.github.io/gemini" />
-<meta property="og:site_name" content="The Lovelace Journal" />
+  <!-- Google Fonts: Google Sans Flex & Product Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,300..700&family=Google+Sans+Display:wght@400;500;700&family=Google+Sans+Text:wght@400;500;700&family=Product+Sans:wght@400;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Research Fellows &amp; Scientists"/>
-<meta name="twitter:description" content="Original perspectives, breakthroughs, and architectural insights in artificial intelligence, custom silicon, quantum computing, and autonomous robotics." />
-<meta name="twitter:image" content="https://irbox.github.io/gemini/assets/images/posts/post-hydrogen.svg" />
-<meta name="twitter:site" content="@lovelace_tech" />
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/gemini/gr/static/css/glue-material.min.css">
+  <link rel="stylesheet" href="/gemini/gr/static/css/googleresearch.css">
+  <link rel="stylesheet" href="/gemini/gr/static/css/modern-custom.css">
+</head>
+<body class="glue-body">
+  
+    <header class="site-header" role="banner">
+      <div class="header-inner">
+        <a href="/gemini/" class="brand-lockup" aria-label="Google Research Home">
+          
+    <svg class="google-logo-svg" viewBox="0 0 74 24" width="74" height="24" aria-hidden="true" role="img">
+      <use href="/gemini/gr/static/assets/icons/glue-icons.svg#google-solid-logo"></use>
+    </svg>
+  
+          <span class="research-text">Research</span>
+        </a>
 
-<!-- Canonical & Favicons -->
-<link rel="canonical" href="https://irbox.github.io/gemini"/>
-<link rel="icon" type="image/svg+xml" href="/gemini/assets/images/favicon.svg"/>
-  </head>
-  <body>
-    <a href="#main-content" class="skip-to-content">Skip to content</a>
-    <header class="site-header">
-  <div class="container site-header__inner">
-    <a href="/gemini/" class="site-header__brand">
-      <img src="/gemini/assets/images/logo.svg" alt="The Lovelace Journal" class="brand-logo" width="36" height="36">
-      <span class="brand-title">The Lovelace Journal</span>
-    </a>
+        <nav class="site-nav" aria-label="Primary">
+          <ul class="nav-links-desktop">
+            
+        <li class="nav-item">
+          <button class="nav-link" type="button" popovertarget="flyout-research-areas" >
+            Research Areas
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="m7 10 5 5 5-5z"/></svg>
+          </button>
+          <div id="flyout-research-areas" class="dropdown-menu" popover="auto">
+            <div class="flyout-grid">
+              
+        <div class="flyout-column">
+          <div class="flyout-column-title">Applied AI & Sciences</div>
+          <div class="flyout-items">
+            
+              <a href="/gemini/research-areas/#earth-ai" class="flyout-item">
+                <img src="/gemini/gr/static/assets/icons/climate.svg" alt="" class="flyout-item-icon" width="24" height="24" loading="lazy">
+                <div>
+                  <span class="flyout-item-title">Earth AI</span>
+                  <span class="flyout-item-desc">Mapping and monitoring our planet with geospatial models</span>
+                </div>
+              </a>
+            
+              <a href="/gemini/research-areas/#health-ai" class="flyout-item">
+                <img src="/gemini/gr/static/assets/icons/healthcare.svg" alt="" class="flyout-item-icon" width="24" height="24" loading="lazy">
+                <div>
+                  <span class="flyout-item-title">Health AI</span>
+                  <span class="flyout-item-desc">Advancing clinical medicine, diagnostics, and genomics</span>
+                </div>
+              </a>
+            
+              <a href="/gemini/research-areas/#science-ai" class="flyout-item">
+                <img src="/gemini/gr/static/assets/icons/general-science.svg" alt="" class="flyout-item-icon" width="24" height="24" loading="lazy">
+                <div>
+                  <span class="flyout-item-title">Science AI</span>
+                  <span class="flyout-item-desc">Accelerating scientific breakthroughs from chemistry to materials</span>
+                </div>
+              </a>
+            
+              <a href="/gemini/research-areas/#sustainability" class="flyout-item">
+                <img src="/gemini/gr/static/assets/icons/flag.svg" alt="" class="flyout-item-icon" width="24" height="24" loading="lazy">
+                <div>
+                  <span class="flyout-item-title">Sustainability & Crisis</span>
+                  <span class="flyout-item-desc">Flood forecasting, wildfire tracking, and clean energy</span>
+                </div>
+              </a>
+            
+          </div>
+        </div>
+      
+        <div class="flyout-column">
+          <div class="flyout-column-title">Foundational ML & Reasoning</div>
+          <div class="flyout-items">
+            
+              <a href="/gemini/research-areas/#algorithms" class="flyout-item">
+                <img src="/gemini/gr/static/assets/icons/algorithms-and-theory.svg" alt="" class="flyout-item-icon" width="24" height="24" loading="lazy">
+                <div>
+                  <span class="flyout-item-title">Algorithms & Theory</span>
+                  <span class="flyout-item-desc">Core algorithmic bounds, graph theory, and optimization</span>
+                </div>
+              </a>
+            
+              <a href="/gemini/research-areas/#machine-intelligence" class="flyout-item">
+                <img src="/gemini/gr/static/assets/icons/machine-intelligence.svg" alt="" class="flyout-item-icon" width="24" height="24" loading="lazy">
+                <div>
+                  <span class="flyout-item-title">Machine Intelligence</span>
+                  <span class="flyout-item-desc">Multimodal models, reasoning trajectories, and agentic search</span>
+                </div>
+              </a>
+            
+              <a href="/gemini/research-areas/#perception" class="flyout-item">
+                <img src="/gemini/gr/static/assets/icons/machine-perception.svg" alt="" class="flyout-item-icon" width="24" height="24" loading="lazy">
+                <div>
+                  <span class="flyout-item-title">Machine Perception</span>
+                  <span class="flyout-item-desc">Computer vision, speech recognition, and audio synthesis</span>
+                </div>
+              </a>
+            
+              <a href="/gemini/research-areas/#nlp" class="flyout-item">
+                <img src="/gemini/gr/static/assets/icons/natural-language-processing.svg" alt="" class="flyout-item-icon" width="24" height="24" loading="lazy">
+                <div>
+                  <span class="flyout-item-title">Natural Language Processing</span>
+                  <span class="flyout-item-desc">Transformers, long-context understanding, and multilingual NLP</span>
+                </div>
+              </a>
+            
+          </div>
+        </div>
+      
+        <div class="flyout-column">
+          <div class="flyout-column-title">Systems, Quantum & Society</div>
+          <div class="flyout-items">
+            
+              <a href="/gemini/research-areas/#quantum" class="flyout-item">
+                <img src="/gemini/gr/static/assets/icons/quantum-computing.svg" alt="" class="flyout-item-icon" width="24" height="24" loading="lazy">
+                <div>
+                  <span class="flyout-item-title">Quantum AI</span>
+                  <span class="flyout-item-desc">Fault-tolerant superconducting quantum processors</span>
+                </div>
+              </a>
+            
+              <a href="/gemini/research-areas/#responsible-ai" class="flyout-item">
+                <img src="/gemini/gr/static/assets/icons/ai-vs-ml.svg" alt="" class="flyout-item-icon" width="24" height="24" loading="lazy">
+                <div>
+                  <span class="flyout-item-title">Responsible AI</span>
+                  <span class="flyout-item-desc">Safety, alignment, transparency, and fairness in ML</span>
+                </div>
+              </a>
+            
+              <a href="/gemini/research-areas/#hci" class="flyout-item">
+                <img src="/gemini/gr/static/assets/icons/human-computer-interaction-and-visualization.svg" alt="" class="flyout-item-icon" width="24" height="24" loading="lazy">
+                <div>
+                  <span class="flyout-item-title">HCI & Visualization</span>
+                  <span class="flyout-item-desc">Human-centered interfaces, interaction design, and visual analytics</span>
+                </div>
+              </a>
+            
+              <a href="/gemini/research-areas/#systems" class="flyout-item">
+                <img src="/gemini/gr/static/assets/icons/hardware-and-architecture.svg" alt="" class="flyout-item-icon" width="24" height="24" loading="lazy">
+                <div>
+                  <span class="flyout-item-title">Software & Hardware Systems</span>
+                  <span class="flyout-item-desc">Custom TPUs, distributed datacenter compilers, and networks</span>
+                </div>
+              </a>
+            
+          </div>
+        </div>
+      
+            </div>
+          </div>
+        </li>
+      
+      <li class="nav-item">
+        <a href="/gemini/pubs/" class="nav-link" >Publications</a>
+      </li>
+    
+      <li class="nav-item">
+        <a href="/gemini/resources/our-projects/" class="nav-link" >Projects</a>
+      </li>
+    
+      <li class="nav-item">
+        <a href="/gemini/people/" class="nav-link" aria-current="page">People</a>
+      </li>
+    
+      <li class="nav-item">
+        <a href="/gemini/programs-and-events/" class="nav-link" >Programs & Events</a>
+      </li>
+    
+      <li class="nav-item">
+        <a href="/gemini/blog/" class="nav-link" >Blog</a>
+      </li>
+    
+          </ul>
+        </nav>
 
-    <nav class="site-header__nav" aria-label="Main Navigation">
-      
-        
-        <a href="/gemini/" class="nav-link">
-          Home
-        </a>
-      
-        
-        <a href="/gemini/research-areas/" class="nav-link">
-          Research Areas
-        </a>
-      
-        
-        <a href="/gemini/publications/" class="nav-link">
-          Publications
-        </a>
-      
-        
-        <a href="/gemini/projects/" class="nav-link">
-          Projects
-        </a>
-      
-        
-        <a href="/gemini/people/" class="nav-link">
-          People
-        </a>
-      
-        
-        <a href="/gemini/categories/" class="nav-link">
-          Journal
-        </a>
-      
-        
-        <a href="/gemini/about/" class="nav-link">
-          About
-        </a>
-      
-    </nav>
+        <div class="header-actions">
+          <button type="button" class="search-trigger-btn" aria-label="Search Google Research" title="Search (Esc to close)">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
 
-    <div class="site-header__actions">
-      <button class="site-header__search-btn" data-search-trigger aria-label="Search stories">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <button class="mobile-menu-btn" type="button" popovertarget="site-mobile-menu" aria-label="Toggle navigation menu">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
+              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+            </svg>
+          </button>
+
+          <ul id="site-mobile-menu" class="mobile-nav" popover="auto">
+            <li><a href="/gemini/research-areas/" class="mobile-nav-link" >Research Areas</a></li><li><a href="/gemini/pubs/" class="mobile-nav-link" >Publications</a></li><li><a href="/gemini/resources/our-projects/" class="mobile-nav-link" >Projects</a></li><li><a href="/gemini/people/" class="mobile-nav-link" aria-current="page">People</a></li><li><a href="/gemini/programs-and-events/" class="mobile-nav-link" >Programs & Events</a></li><li><a href="/gemini/blog/" class="mobile-nav-link" >Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  
+  
+    <dialog class="search-modal" id="search-dialog" aria-labelledby="search-dialog-title" closedby="any">
+      <div class="search-dialog-header">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#5f6368" stroke-width="2" aria-hidden="true">
           <circle cx="11" cy="11" r="8"></circle>
           <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
         </svg>
-        <span>Search</span>
-        <span class="search-key">/</span>
-      </button>
-
-      <button class="site-header__toggle" data-menu-toggle aria-label="Toggle menu" aria-expanded="false">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="3" y1="12" x2="21" y2="12"></line>
-          <line x1="3" y1="6" x2="21" y2="6"></line>
-          <line x1="3" y1="18" x2="21" y2="18"></line>
-        </svg>
-      </button>
-    </div>
-  </div>
-</header>
-
-<!-- Mobile Navigation Drawer -->
-<div class="mobile-drawer" data-mobile-drawer>
-  
-    <a href="/gemini/" class="mobile-link">
-      Home
-    </a>
-  
-    <a href="/gemini/research-areas/" class="mobile-link">
-      Research Areas
-    </a>
-  
-    <a href="/gemini/publications/" class="mobile-link">
-      Publications
-    </a>
-  
-    <a href="/gemini/projects/" class="mobile-link">
-      Projects
-    </a>
-  
-    <a href="/gemini/people/" class="mobile-link">
-      People
-    </a>
-  
-    <a href="/gemini/categories/" class="mobile-link">
-      Journal
-    </a>
-  
-    <a href="/gemini/about/" class="mobile-link">
-      About
-    </a>
-  
-</div>
-
-    <main id="main-content" class="main-content">
-      <div class="container" style="padding-top: 48px; padding-bottom: 64px;">
-  <div style="max-width: 800px; margin: 0 auto;">
-    <h1 style="font-size: 2.5rem; font-weight: 600; margin-bottom: 24px; color: #18181b;">
-      Research Fellows & Scientists
-    </h1>
-    <div class="page-content" style="font-size: 1.125rem; line-height: 1.7; color: #3f3f46;">
-      <p class="lead-paragraph" style="font-size: 1.25rem; color: #52525b; margin-bottom: 32px; line-height: 1.6;">
-  Meet the research scientists, hardware architects, and fellows advancing frontier computing at The Lovelace Lab.
-</p>
-
-<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px;">
-  
-    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
-      <div style="display: flex; gap: 16px; align-items: center; margin-bottom: 16px;">
-        <img src="/gemini/assets/images/authors/ada-lovelace.svg" alt="Ada Lovelace" style="width: 64px; height: 64px; border-radius: 9999px; object-fit: cover; border: 2px solid #e2e8f0;">
-        <div>
-          <h2 style="font-size: 1.25rem; font-weight: 600; color: #18181b; margin-bottom: 2px;">Ada Lovelace</h2>
-          <div style="font-size: 0.8125rem; color: #4f46e5; font-weight: 500;">Director of Foundational Computing & Reasoning</div>
-        </div>
+        <label for="search-input" class="sr-only" id="search-dialog-title">Search Google Research</label>
+        <input 
+          type="search" 
+          id="search-input" 
+          class="search-dialog-input" 
+          placeholder="Search areas, papers, projects, people..." 
+          autocomplete="off"
+          autofocus
+        >
+        <form method="dialog">
+          <button type="submit" class="search-dialog-close" aria-label="Close search">✕</button>
+        </form>
       </div>
+      <div class="search-dialog-results" id="search-results">
+        <p style="color:var(--google-grey-500);text-align:center;padding:2rem 0;">Type to search across Research Areas, Publications, Projects, People, and Blog...</p>
+      </div>
+    </dialog>
+  
 
-      <p style="font-size: 0.9375rem; color: #52525b; line-height: 1.5; margin-bottom: 16px; flex-grow: 1;">
-        Directs foundational cognitive architecture research and formal algorithm synthesis. Pioneered the vision of algebraic computational looms.
+  <main id="page-content" tabindex="-1">
+    
+    <section class="hero-section" style="padding-bottom:2rem;">
+      <span style="font-size:0.85rem;font-weight:700;text-transform:uppercase;color:var(--google-blue);letter-spacing:0.05em;">Our Researchers</span>
+      <h1 class="display-headline">People</h1>
+      <p class="sub-headline">
+        Google researchers, scientists, and engineers drive advancements in computer science and fundamental science through both curiosity-driven and applied discovery.
       </p>
+    </section>
 
-      <div style="border-top: 1px solid #f1f5f9; padding-top: 12px; margin-bottom: 12px;">
-        <div style="font-size: 0.75rem; font-weight: 600; text-transform: uppercase; color: #71717a; margin-bottom: 6px;">Research Focus</div>
-        <div style="display: flex; flex-wrap: wrap; gap: 6px;">
-          
-            <span class="badge" style="font-size: 0.6875rem; padding: 2px 8px;">Foundational Reasoning</span>
-          
-            <span class="badge" style="font-size: 0.6875rem; padding: 2px 8px;">Neural-Symbolic Synthesis</span>
-          
-            <span class="badge" style="font-size: 0.6875rem; padding: 2px 8px;">MCTS</span>
-          
-            <span class="badge" style="font-size: 0.6875rem; padding: 2px 8px;">In-Browser Inference</span>
-          
+    <div class="content-container">
+      <div class="grid-3-col">
+        
+    <article class="person-card" id="jeff-dean">
+      <div class="person-header">
+        <div class="person-avatar" style="background-color:#4285F4;">
+          JD
         </div>
-      </div>
-
-      <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #f1f5f9; padding-top: 12px; font-size: 0.8125rem; color: #71717a;">
-        <span>14 Publications</span>
-        <a href="https://github.com/irbox/gemini" target="_blank" rel="noopener noreferrer" style="color: #4f46e5; font-weight: 500;">GitHub Profile →</a>
-      </div>
-    </div>
-  
-    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
-      <div style="display: flex; gap: 16px; align-items: center; margin-bottom: 16px;">
-        <img src="/gemini/assets/images/authors/kai-chen.svg" alt="Kai Chen" style="width: 64px; height: 64px; border-radius: 9999px; object-fit: cover; border: 2px solid #e2e8f0;">
         <div>
-          <h2 style="font-size: 1.25rem; font-weight: 600; color: #18181b; margin-bottom: 2px;">Kai Chen</h2>
-          <div style="font-size: 0.8125rem; color: #4f46e5; font-weight: 500;">Director of Custom Silicon & Photonic Fabrics</div>
+          <h3 class="person-name">Jeff Dean</h3>
+          <div class="person-title">Chief Scientist, Google</div>
+          <span style="font-size:0.75rem;color:var(--google-grey-500);text-transform:uppercase;font-weight:600;">Leadership & Systems</span>
         </div>
       </div>
-
-      <p style="font-size: 0.9375rem; color: #52525b; line-height: 1.5; margin-bottom: 16px; flex-grow: 1;">
-        Leads custom silicon microarchitecture and optical interposer routing. Previously designed multi-teraflop systolic accelerators.
-      </p>
-
-      <div style="border-top: 1px solid #f1f5f9; padding-top: 12px; margin-bottom: 12px;">
-        <div style="font-size: 0.75rem; font-weight: 600; text-transform: uppercase; color: #71717a; margin-bottom: 6px;">Research Focus</div>
-        <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+      <p class="person-bio">Jeff Dean is the Chief Scientist of Google, leading advanced AI research and computing infrastructure. He co-designed fundamental Google systems including MapReduce, BigTable, Spanner, TensorFlow, and early TPU architectures. Member of the National Academy of Engineering.</p>
+      <div class="card-footer">
+        <span style="font-size:0.85rem;color:var(--google-grey-700);"><strong>184</strong> Publications</span>
+        <div style="display:flex;gap:0.5rem;">
           
-            <span class="badge" style="font-size: 0.6875rem; padding: 2px 8px;">Systolic Silicon</span>
-          
-            <span class="badge" style="font-size: 0.6875rem; padding: 2px 8px;">Micro-Ring Photonics</span>
-          
-            <span class="badge" style="font-size: 0.6875rem; padding: 2px 8px;">Near-Memory Computing</span>
-          
-            <span class="badge" style="font-size: 0.6875rem; padding: 2px 8px;">Thermal Gating</span>
+            <a href="https://scholar.google.com/citations?user=NMS69JYAAAAJ" class="card-action-link" target="_blank" rel="noopener">
+              Google Scholar ↗
+            </a>
           
         </div>
       </div>
-
-      <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #f1f5f9; padding-top: 12px; font-size: 0.8125rem; color: #71717a;">
-        <span>22 Publications</span>
-        <a href="https://github.com/irbox/gemini" target="_blank" rel="noopener noreferrer" style="color: #4f46e5; font-weight: 500;">GitHub Profile →</a>
-      </div>
-    </div>
+    </article>
   
-    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
-      <div style="display: flex; gap: 16px; align-items: center; margin-bottom: 16px;">
-        <img src="/gemini/assets/images/authors/marcus-vance.svg" alt="Marcus Vance" style="width: 64px; height: 64px; border-radius: 9999px; object-fit: cover; border: 2px solid #e2e8f0;">
+    <article class="person-card" id="demis-hassabis">
+      <div class="person-header">
+        <div class="person-avatar" style="background-color:#EA4335;">
+          DH
+        </div>
         <div>
-          <h2 style="font-size: 1.25rem; font-weight: 600; color: #18181b; margin-bottom: 2px;">Marcus Vance</h2>
-          <div style="font-size: 0.8125rem; color: #4f46e5; font-weight: 500;">Distinguished Fellow in Quantum Error Mitigation</div>
+          <h3 class="person-name">Demis Hassabis</h3>
+          <div class="person-title">CEO, Google DeepMind</div>
+          <span style="font-size:0.75rem;color:var(--google-grey-500);text-transform:uppercase;font-weight:600;">Leadership & Frontier AI</span>
         </div>
       </div>
-
-      <p style="font-size: 0.9375rem; color: #52525b; line-height: 1.5; margin-bottom: 16px; flex-grow: 1;">
-        Specializes in distance-7 planar surface code architectures and sub-microsecond FPGA error-decoding pipelines.
-      </p>
-
-      <div style="border-top: 1px solid #f1f5f9; padding-top: 12px; margin-bottom: 12px;">
-        <div style="font-size: 0.75rem; font-weight: 600; text-transform: uppercase; color: #71717a; margin-bottom: 6px;">Research Focus</div>
-        <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+      <p class="person-bio">Sir Demis Hassabis is the co-founder and CEO of Google DeepMind and Nobel Laureate in Chemistry (2024). He led pioneering projects including AlphaGo, AlphaZero, and AlphaFold, demonstrating that AI can solve grand biological challenges.</p>
+      <div class="card-footer">
+        <span style="font-size:0.85rem;color:var(--google-grey-700);"><strong>142</strong> Publications</span>
+        <div style="display:flex;gap:0.5rem;">
           
-            <span class="badge" style="font-size: 0.6875rem; padding: 2px 8px;">Surface Codes</span>
-          
-            <span class="badge" style="font-size: 0.6875rem; padding: 2px 8px;">Cryogenic Control</span>
-          
-            <span class="badge" style="font-size: 0.6875rem; padding: 2px 8px;">Fault Tolerance</span>
-          
-            <span class="badge" style="font-size: 0.6875rem; padding: 2px 8px;">Transmon Qubits</span>
+            <a href="https://scholar.google.com/citations?user=5aGjN-gAAAAJ" class="card-action-link" target="_blank" rel="noopener">
+              Google Scholar ↗
+            </a>
           
         </div>
       </div>
-
-      <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #f1f5f9; padding-top: 12px; font-size: 0.8125rem; color: #71717a;">
-        <span>19 Publications</span>
-        <a href="https://github.com/irbox/gemini" target="_blank" rel="noopener noreferrer" style="color: #4f46e5; font-weight: 500;">GitHub Profile →</a>
-      </div>
-    </div>
+    </article>
   
-    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
-      <div style="display: flex; gap: 16px; align-items: center; margin-bottom: 16px;">
-        <img src="/gemini/assets/images/authors/clara-shannon.svg" alt="Clara Shannon" style="width: 64px; height: 64px; border-radius: 9999px; object-fit: cover; border: 2px solid #e2e8f0;">
+    <article class="person-card" id="hartmut-neven">
+      <div class="person-header">
+        <div class="person-avatar" style="background-color:#FBBC04;">
+          HN
+        </div>
         <div>
-          <h2 style="font-size: 1.25rem; font-weight: 600; color: #18181b; margin-bottom: 2px;">Clara Shannon</h2>
-          <div style="font-size: 0.8125rem; color: #4f46e5; font-weight: 500;">Principal Research Scientist, Information Theory</div>
+          <h3 class="person-name">Hartmut Neven</h3>
+          <div class="person-title">VP of Engineering & Founder, Quantum AI</div>
+          <span style="font-size:0.75rem;color:var(--google-grey-500);text-transform:uppercase;font-weight:600;">Quantum Computing</span>
         </div>
       </div>
-
-      <p style="font-size: 0.9375rem; color: #52525b; line-height: 1.5; margin-bottom: 16px; flex-grow: 1;">
-        Focuses on mathematical limits of inference compression, entropy-constrained decoding, and formal safety guarantees.
-      </p>
-
-      <div style="border-top: 1px solid #f1f5f9; padding-top: 12px; margin-bottom: 12px;">
-        <div style="font-size: 0.75rem; font-weight: 600; text-transform: uppercase; color: #71717a; margin-bottom: 6px;">Research Focus</div>
-        <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+      <p class="person-bio">Hartmut Neven leads the Google Quantum AI laboratory in Santa Barbara, pioneering superconducting quantum processors from Sycamore to Willow, achieving quantum supremacy and demonstrating distance-7 surface code error suppression below threshold.</p>
+      <div class="card-footer">
+        <span style="font-size:0.85rem;color:var(--google-grey-700);"><strong>96</strong> Publications</span>
+        <div style="display:flex;gap:0.5rem;">
           
-            <span class="badge" style="font-size: 0.6875rem; padding: 2px 8px;">Information Theory</span>
-          
-            <span class="badge" style="font-size: 0.6875rem; padding: 2px 8px;">Lossless KV Compression</span>
-          
-            <span class="badge" style="font-size: 0.6875rem; padding: 2px 8px;">Algorithmic Bounds</span>
-          
-            <span class="badge" style="font-size: 0.6875rem; padding: 2px 8px;">Cryptography</span>
+            <a href="https://quantumai.google" class="card-action-link" target="_blank" rel="noopener">
+              Quantum AI ↗
+            </a>
           
         </div>
       </div>
-
-      <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #f1f5f9; padding-top: 12px; font-size: 0.8125rem; color: #71717a;">
-        <span>16 Publications</span>
-        <a href="https://github.com/irbox/gemini" target="_blank" rel="noopener noreferrer" style="color: #4f46e5; font-weight: 500;">GitHub Profile →</a>
-      </div>
-    </div>
+    </article>
   
-    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
-      <div style="display: flex; gap: 16px; align-items: center; margin-bottom: 16px;">
-        <img src="/gemini/assets/images/authors/elena-rostova.svg" alt="Elena Rostova" style="width: 64px; height: 64px; border-radius: 9999px; object-fit: cover; border: 2px solid #e2e8f0;">
+    <article class="person-card" id="pushmeet-kohli">
+      <div class="person-header">
+        <div class="person-avatar" style="background-color:#34A853;">
+          PK
+        </div>
         <div>
-          <h2 style="font-size: 1.25rem; font-weight: 600; color: #18181b; margin-bottom: 2px;">Elena Rostova</h2>
-          <div style="font-size: 0.8125rem; color: #4f46e5; font-weight: 500;">Principal Scientist, Autonomous Systems & Robotics</div>
+          <h3 class="person-name">Pushmeet Kohli</h3>
+          <div class="person-title">VP of Research, Science & Robust AI</div>
+          <span style="font-size:0.75rem;color:var(--google-grey-500);text-transform:uppercase;font-weight:600;">Science AI</span>
         </div>
       </div>
-
-      <p style="font-size: 0.9375rem; color: #52525b; line-height: 1.5; margin-bottom: 16px; flex-grow: 1;">
-        Architect of visual-inertial SLAM and distributed multi-agent consensus algorithms for extreme environment space rovers.
-      </p>
-
-      <div style="border-top: 1px solid #f1f5f9; padding-top: 12px; margin-bottom: 12px;">
-        <div style="font-size: 0.75rem; font-weight: 600; text-transform: uppercase; color: #71717a; margin-bottom: 6px;">Research Focus</div>
-        <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+      <p class="person-bio">Pushmeet Kohli leads AI for Science initiatives at Google DeepMind, directing research at the interface of deep learning, quantum chemistry, structural biology (AlphaFold), and mathematical theorem proving (AlphaGeometry).</p>
+      <div class="card-footer">
+        <span style="font-size:0.85rem;color:var(--google-grey-700);"><strong>165</strong> Publications</span>
+        <div style="display:flex;gap:0.5rem;">
           
-            <span class="badge" style="font-size: 0.6875rem; padding: 2px 8px;">Deep-Space Robotics</span>
-          
-            <span class="badge" style="font-size: 0.6875rem; padding: 2px 8px;">Visual SLAM</span>
-          
-            <span class="badge" style="font-size: 0.6875rem; padding: 2px 8px;">Event Cameras</span>
-          
-            <span class="badge" style="font-size: 0.6875rem; padding: 2px 8px;">Radiation-Hard Compute</span>
+            <a href="https://scholar.google.com/citations?user=c9Nf8oIAAAAJ" class="card-action-link" target="_blank" rel="noopener">
+              Google Scholar ↗
+            </a>
           
         </div>
       </div>
-
-      <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #f1f5f9; padding-top: 12px; font-size: 0.8125rem; color: #71717a;">
-        <span>18 Publications</span>
-        <a href="https://github.com/irbox/gemini" target="_blank" rel="noopener noreferrer" style="color: #4f46e5; font-weight: 500;">GitHub Profile →</a>
-      </div>
-    </div>
+    </article>
   
-    <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
-      <div style="display: flex; gap: 16px; align-items: center; margin-bottom: 16px;">
-        <img src="/gemini/assets/images/authors/sarah-jenkins.svg" alt="Sarah Jenkins, M.D., Ph.D." style="width: 64px; height: 64px; border-radius: 9999px; object-fit: cover; border: 2px solid #e2e8f0;">
+    <article class="person-card" id="corinna-cortes">
+      <div class="person-header">
+        <div class="person-avatar" style="background-color:#4285F4;">
+          CC
+        </div>
         <div>
-          <h2 style="font-size: 1.25rem; font-weight: 600; color: #18181b; margin-bottom: 2px;">Sarah Jenkins, M.D., Ph.D.</h2>
-          <div style="font-size: 0.8125rem; color: #4f46e5; font-weight: 500;">Senior Research Scientist, Biosensors & Edge Health</div>
+          <h3 class="person-name">Corinna Cortes</h3>
+          <div class="person-title">VP of Research, Google New York</div>
+          <span style="font-size:0.75rem;color:var(--google-grey-500);text-transform:uppercase;font-weight:600;">Machine Learning</span>
         </div>
       </div>
-
-      <p style="font-size: 0.9375rem; color: #52525b; line-height: 1.5; margin-bottom: 16px; flex-grow: 1;">
-        Develops continuous optical biomarker sensing arrays and low-power spiking neural network edge firmware.
-      </p>
-
-      <div style="border-top: 1px solid #f1f5f9; padding-top: 12px; margin-bottom: 12px;">
-        <div style="font-size: 0.75rem; font-weight: 600; text-transform: uppercase; color: #71717a; margin-bottom: 6px;">Research Focus</div>
-        <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+      <p class="person-bio">Corinna Cortes is a computer scientist renowned for co-inventing Support Vector Machines (SVM). She heads Google's research center in New York, conducting fundamental work in theoretical machine learning, online learning algorithms, and ranking.</p>
+      <div class="card-footer">
+        <span style="font-size:0.85rem;color:var(--google-grey-700);"><strong>138</strong> Publications</span>
+        <div style="display:flex;gap:0.5rem;">
           
-            <span class="badge" style="font-size: 0.6875rem; padding: 2px 8px;">Micro-PPG Arrays</span>
-          
-            <span class="badge" style="font-size: 0.6875rem; padding: 2px 8px;">Spiking Networks</span>
-          
-            <span class="badge" style="font-size: 0.6875rem; padding: 2px 8px;">Hemodynamic Telemetry</span>
-          
-            <span class="badge" style="font-size: 0.6875rem; padding: 2px 8px;">Wearable Silicon</span>
+            <a href="https://scholar.google.com/citations?user=51k-69AAAAAJ" class="card-action-link" target="_blank" rel="noopener">
+              Google Scholar ↗
+            </a>
           
         </div>
       </div>
-
-      <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #f1f5f9; padding-top: 12px; font-size: 0.8125rem; color: #71717a;">
-        <span>12 Publications</span>
-        <a href="https://github.com/irbox/gemini" target="_blank" rel="noopener noreferrer" style="color: #4f46e5; font-weight: 500;">GitHub Profile →</a>
+    </article>
+  
+    <article class="person-card" id="marian-croak">
+      <div class="person-header">
+        <div class="person-avatar" style="background-color:#EA4335;">
+          MC
+        </div>
+        <div>
+          <h3 class="person-name">Marian Croak</h3>
+          <div class="person-title">VP of Engineering, Responsible AI</div>
+          <span style="font-size:0.75rem;color:var(--google-grey-500);text-transform:uppercase;font-weight:600;">Responsible AI</span>
+        </div>
+      </div>
+      <p class="person-bio">Marian Croak is a Vice President of Engineering at Google leading the Responsible AI and Human-Centered Technology organization. She is an inductee into the National Inventors Hall of Fame and holds over 200 patents in telecommunications and computing.</p>
+      <div class="card-footer">
+        <span style="font-size:0.85rem;color:var(--google-grey-700);"><strong>48</strong> Publications</span>
+        <div style="display:flex;gap:0.5rem;">
+          
+            <a href="/gemini/research-areas/#responsible-ai" class="card-action-link" target="_blank" rel="noopener">
+              Responsible AI ↗
+            </a>
+          
+        </div>
+      </div>
+    </article>
+  
+    <article class="person-card" id="john-jumper">
+      <div class="person-header">
+        <div class="person-avatar" style="background-color:#34A853;">
+          JJ
+        </div>
+        <div>
+          <h3 class="person-name">John Jumper</h3>
+          <div class="person-title">Senior Staff Research Scientist & Director, AlphaFold</div>
+          <span style="font-size:0.75rem;color:var(--google-grey-500);text-transform:uppercase;font-weight:600;">Science AI</span>
+        </div>
+      </div>
+      <p class="person-bio">John Jumper is a Director at Google DeepMind and co-recipient of the 2024 Nobel Prize in Chemistry for computational protein structure prediction. He led the architecture design and training of AlphaFold 2 and AlphaFold 3.</p>
+      <div class="card-footer">
+        <span style="font-size:0.85rem;color:var(--google-grey-700);"><strong>52</strong> Publications</span>
+        <div style="display:flex;gap:0.5rem;">
+          
+            <a href="https://scholar.google.com/citations?user=V7N01S4AAAAJ" class="card-action-link" target="_blank" rel="noopener">
+              Google Scholar ↗
+            </a>
+          
+        </div>
+      </div>
+    </article>
+  
+    <article class="person-card" id="yossi-matias">
+      <div class="person-header">
+        <div class="person-avatar" style="background-color:#FBBC04;">
+          YM
+        </div>
+        <div>
+          <h3 class="person-name">Yossi Matias</h3>
+          <div class="person-title">VP of Engineering & Research</div>
+          <span style="font-size:0.75rem;color:var(--google-grey-500);text-transform:uppercase;font-weight:600;">Applied AI</span>
+        </div>
+      </div>
+      <p class="person-bio">Yossi Matias is a Vice President of Engineering and Research at Google leading initiatives in FloodHub, conversational AI, and crisis response systems. Recipient of the Gödel Prize and ACM Fellow.</p>
+      <div class="card-footer">
+        <span style="font-size:0.85rem;color:var(--google-grey-700);"><strong>110</strong> Publications</span>
+        <div style="display:flex;gap:0.5rem;">
+          
+            <a href="https://scholar.google.com/citations?user=F_65L64AAAAJ" class="card-action-link" target="_blank" rel="noopener">
+              Google Scholar ↗
+            </a>
+          
+        </div>
+      </div>
+    </article>
+  
       </div>
     </div>
   
-</div>
-    </div>
-  </div>
-</div>
-    </main>
+  </main>
 
-    <footer class="site-footer">
-  <div class="container">
-    <div class="site-footer__grid">
-      <div class="site-footer__brand">
-        <div class="brand-logo">
-          <img src="/gemini/assets/images/logo.svg" alt="The Lovelace Journal Logo" width="28" height="28">
-          <span>The Lovelace Journal</span>
+  
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="/gemini/" class="brand-lockup" aria-label="Google Research">
+              
+    <svg class="google-logo-svg" viewBox="0 0 74 24" width="74" height="24" aria-hidden="true" role="img">
+      <use href="/gemini/gr/static/assets/icons/glue-icons.svg#google-solid-logo"></use>
+    </svg>
+  
+              <span class="research-text">Research</span>
+            </a>
+            <p style="color:var(--google-grey-700);font-size:0.9rem;max-width:320px;margin-top:0.75rem;">
+              Pursuing research that transforms lives, expands human knowledge, and advances state-of-the-art AI.
+            </p>
+            <div class="footer-social-links" style="margin-top:1.25rem;">
+              <a href="https://twitter.com/GoogleResearch" class="social-icon-btn" aria-label="Google Research on X / Twitter" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a href="https://github.com/google-research" class="social-icon-btn" aria-label="Google Research on GitHub" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+              </a>
+              <a href="https://www.youtube.com/user/GoogleResearch" class="social-icon-btn" aria-label="Google Research on YouTube" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-columns">
+            <div class="footer-col">
+              <div class="footer-col-title">Research</div>
+              <ul class="footer-col-links">
+                <li><a href="/gemini/research-areas/">Research Areas</a></li>
+                <li><a href="/gemini/pubs/">Publications</a></li>
+                <li><a href="/gemini/resources/our-projects/">Projects</a></li>
+                <li><a href="/gemini/people/">People</a></li>
+                <li><a href="/gemini/blog/">Blog</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <div class="footer-col-title">Pillars</div>
+              <ul class="footer-col-links">
+                <li><a href="/gemini/research-areas/#earth-ai">Earth AI & Climate</a></li>
+                <li><a href="/gemini/research-areas/#health-ai">Health AI & Medicine</a></li>
+                <li><a href="/gemini/research-areas/#science-ai">Science AI & Biology</a></li>
+                <li><a href="/gemini/research-areas/#quantum">Quantum Computing</a></li>
+                <li><a href="/gemini/research-areas/#responsible-ai">Responsible AI</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <div class="footer-col-title">Programs</div>
+              <ul class="footer-col-links">
+                <li><a href="/gemini/programs-and-events/">Academic Engagement</a></li>
+                <li><a href="/gemini/programs-and-events/">PhD Fellowships</a></li>
+                <li><a href="/gemini/programs-and-events/">Research Grants</a></li>
+                <li><a href="https://careers.google.com">Google Careers</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <p class="brand-desc">
-          Frontier research, systems engineering, custom silicon, and algorithmic breakthroughs from The Lovelace Lab.
-        </p>
-      </div>
 
-      <div>
-        <h4 class="site-footer__col-title">Categories</h4>
-        <ul class="site-footer__links">
-          
-            <li>
-              <a href="/gemini/categories/#frontier-ai">Frontier AI &amp; Reasoning</a>
-            </li>
-          
-            <li>
-              <a href="/gemini/categories/#hardware-accelerators">Hardware &amp; Accelerators</a>
-            </li>
-          
-            <li>
-              <a href="/gemini/categories/#quantum-computing">Quantum Computing</a>
-            </li>
-          
-            <li>
-              <a href="/gemini/categories/#autonomous-systems">Autonomous Systems</a>
-            </li>
-          
-            <li>
-              <a href="/gemini/categories/#biosensors-health">Biosensors &amp; Health</a>
-            </li>
-          
-        </ul>
+        <div class="footer-bottom">
+          <div>© 2026 Google LLC. All rights reserved.</div>
+          <ul class="footer-legal-links">
+            <li><a href="https://about.google/">About Google</a></li>
+            <li><a href="https://policies.google.com/privacy">Privacy</a></li>
+            <li><a href="https://policies.google.com/terms">Terms</a></li>
+            <li><a href="/gemini/search.json">Search Index</a></li>
+          </ul>
+        </div>
       </div>
+    </footer>
+  
 
-      <div>
-        <h4 class="site-footer__col-title">About & Research</h4>
-        <ul class="site-footer__links">
-          
-            <li>
-              <a href="/gemini/about/#ethics">Research Ethics</a>
-            </li>
-          
-            <li>
-              <a href="/gemini/https://github.com/irbox/gemini">Open Source Code</a>
-            </li>
-          
-            <li>
-              <a href="/gemini/about/#reproducibility">Reproducibility Charter</a>
-            </li>
-          
-        </ul>
-      </div>
-
-      <div>
-        <h4 class="site-footer__col-title">Connect</h4>
-        <ul class="site-footer__links">
-          
-            <li>
-              <a href="https://github.com/irbox/gemini" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </li>
-          
-            <li>
-              <a href="https://twitter.com/lovelace_tech" target="_blank" rel="noopener noreferrer">Twitter &#x2f; X</a>
-            </li>
-          
-            <li>
-              <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            </li>
-          
-        </ul>
-      </div>
-    </div>
-
-    <div class="site-footer__bottom">
-      <div>
-        © 2026 The Lovelace Journal. Published under open research and MIT license.
-      </div>
-      <div class="site-footer__social">
-        <a href="/gemini/feed.xml">RSS Feed</a>
-        <a href="/gemini/about/">About The Journal</a>
-      </div>
-    </div>
-  </div>
-</footer>
-    <div class="search-modal" data-search-modal data-baseurl="/gemini">
-  <div class="search-modal__content">
-    <div class="search-modal__header">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#71717a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="11" cy="11" r="8"></circle>
-        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-      </svg>
-      <input type="text" placeholder="Search research papers, engineering deep dives, architectures..." data-search-input aria-label="Search stories">
-      <button class="close-btn" data-close-search aria-label="Close search">✕</button>
-    </div>
-    <div class="search-modal__results" data-search-results></div>
-  </div>
-</div>
-    <!-- Privacy & Cookie Banner -->
-<div class="privacy-notification-bar" style="display:none;" id="privacyNotice" role="region" aria-label="Privacy Notice">
-  <div class="container">
-    <p>This journal uses local storage and privacy-preserving metrics to analyze research readership. No third-party ad tracking is used.</p>
-    <button type="button" class="btn btn--outline" onclick="document.getElementById('privacyNotice').style.display='none'; localStorage.setItem('cookieConsent','dismissed');">Acknowledge</button>
-  </div>
-</div>
-
-    <script src="/gemini/assets/js/main.js"></script>
-  </body>
+  <!-- Client-side script -->
+  <script src="/gemini/gr/static/js/modern-components.js" type="module"></script>
+</body>
 </html>
