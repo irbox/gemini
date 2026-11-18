@@ -1,0 +1,52 @@
+[
+  {
+    "id": "willow-quantum-breakthrough",
+    "title": "Quantum Error Correction Below the Surface Code Threshold with Willow",
+    "date": "2024-12-09",
+    "category": "Quantum AI",
+    "author": "Hartmut Neven",
+    "read_time": "7 min read",
+    "excerpt": "Today, Google Quantum AI introduces Willow, our next-generation 105-qubit quantum processor that cuts logical error rates in half when moving from distance-3 to distance-5 and distance-7 surface codes.",
+    "url": "/gemini/blog/willow-quantum-breakthrough/"
+  },
+  {
+    "id": "alphafold-3-biomolecular-complexes",
+    "title": "AlphaFold 3: Accurately Predicting the Structure of All Life's Molecules",
+    "date": "2024-05-08",
+    "category": "Science AI",
+    "author": "John Jumper & Demis Hassabis",
+    "read_time": "9 min read",
+    "excerpt": "AlphaFold 3 models interactions across proteins, DNA, RNA, ligands, and chemical modifications with unprecedented fidelity, launching via the free AlphaFold Server for scientists worldwide.",
+    "url": "/gemini/blog/alphafold-3-biomolecular-complexes/"
+  },
+  {
+    "id": "med-gemini-clinical-reasoning",
+    "title": "Advancing Clinical Reasoning and Medical Diagnosis with Med-Gemini",
+    "date": "2024-04-25",
+    "category": "Health AI",
+    "author": "Alan Karthikesalingam & Vivek Natarajan",
+    "read_time": "6 min read",
+    "excerpt": "How equipping Gemini with fine-tuned web-search retrieval, specialized radiology decoders, and multimodal grounding sets new records in clinical problem-solving benchmarks.",
+    "url": "/gemini/blog/med-gemini-clinical-reasoning/"
+  },
+  {
+    "id": "graphcast-global-weather",
+    "title": "GraphCast: AI Weather Forecasting in Under a Minute",
+    "date": "2023-11-14",
+    "category": "Earth AI",
+    "author": "Remi Lam & Alvaro Sanchez-Gonzalez",
+    "read_time": "8 min read",
+    "excerpt": "Operating at 0.25-degree resolution, GraphCast predicts severe weather tracks, atmospheric river precipitation, and temperature extremes up to 10 days ahead faster and more accurately than numerical baselines.",
+    "url": "/gemini/blog/graphcast-global-weather/"
+  },
+  {
+    "id": "transformer-ten-years-anniversary",
+    "title": "From 'Attention Is All You Need' to Frontier AI: Reflections on the Transformer",
+    "date": "2024-06-12",
+    "category": "Machine Intelligence",
+    "author": "Jeff Dean",
+    "read_time": "11 min read",
+    "excerpt": "A look back at how an algorithmic insight in neural machine translation sparked the revolution in foundational multimodal reasoning and open research collaboration.",
+    "url": "/gemini/blog/transformer-ten-years-anniversary/"
+  }
+]

@@ -1,9 +1,4 @@
 node_modules/
 dist/
 _site/
-target/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
 .DS_Store
-attachments/

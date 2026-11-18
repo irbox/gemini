@@ -1,0 +1,64 @@
+{
+  "main": [
+    {
+      "title": "Research Areas",
+      "url": "/gemini/research-areas/",
+      "id": "research-areas",
+      "has_flyout": true,
+      "columns": [
+        {
+          "heading": "Applied AI & Sciences",
+          "items": [
+            { "title": "Earth AI", "url": "/gemini/research-areas/#earth-ai", "desc": "Mapping and monitoring our planet with geospatial models", "icon": "climate.svg" },
+            { "title": "Health AI", "url": "/gemini/research-areas/#health-ai", "desc": "Advancing clinical medicine, diagnostics, and genomics", "icon": "healthcare.svg" },
+            { "title": "Science AI", "url": "/gemini/research-areas/#science-ai", "desc": "Accelerating scientific breakthroughs from chemistry to materials", "icon": "general-science.svg" },
+            { "title": "Sustainability & Crisis", "url": "/gemini/research-areas/#sustainability", "desc": "Flood forecasting, wildfire tracking, and clean energy", "icon": "flag.svg" }
+          ]
+        },
+        {
+          "heading": "Foundational ML & Reasoning",
+          "items": [
+            { "title": "Algorithms & Theory", "url": "/gemini/research-areas/#algorithms", "desc": "Core algorithmic bounds, graph theory, and optimization", "icon": "algorithms-and-theory.svg" },
+            { "title": "Machine Intelligence", "url": "/gemini/research-areas/#machine-intelligence", "desc": "Multimodal models, reasoning trajectories, and agentic search", "icon": "machine-intelligence.svg" },
+            { "title": "Machine Perception", "url": "/gemini/research-areas/#perception", "desc": "Computer vision, speech recognition, and audio synthesis", "icon": "machine-perception.svg" },
+            { "title": "Natural Language Processing", "url": "/gemini/research-areas/#nlp", "desc": "Transformers, long-context understanding, and multilingual NLP", "icon": "natural-language-processing.svg" }
+          ]
+        },
+        {
+          "heading": "Systems, Quantum & Society",
+          "items": [
+            { "title": "Quantum AI", "url": "/gemini/research-areas/#quantum", "desc": "Fault-tolerant superconducting quantum processors", "icon": "quantum-computing.svg" },
+            { "title": "Responsible AI", "url": "/gemini/research-areas/#responsible-ai", "desc": "Safety, alignment, transparency, and fairness in ML", "icon": "ai-vs-ml.svg" },
+            { "title": "HCI & Visualization", "url": "/gemini/research-areas/#hci", "desc": "Human-centered interfaces, interaction design, and visual analytics", "icon": "human-computer-interaction-and-visualization.svg" },
+            { "title": "Software & Hardware Systems", "url": "/gemini/research-areas/#systems", "desc": "Custom TPUs, distributed datacenter compilers, and networks", "icon": "hardware-and-architecture.svg" }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Publications",
+      "url": "/gemini/pubs/",
+      "id": "pubs"
+    },
+    {
+      "title": "Projects",
+      "url": "/gemini/resources/our-projects/",
+      "id": "projects"
+    },
+    {
+      "title": "People",
+      "url": "/gemini/people/",
+      "id": "people"
+    },
+    {
+      "title": "Programs & Events",
+      "url": "/gemini/programs-and-events/",
+      "id": "programs"
+    },
+    {
+      "title": "Blog",
+      "url": "/gemini/blog/",
+      "id": "blog"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+[
+  {
+    "pillar": "Applied AI & Sciences",
+    "slug": "applied-ai",
+    "description": "Applying machine learning to fundamental scientific disciplines, planetary systems, and global health challenges to deliver measurable real-world impact.",
+    "areas": [
+      {
+        "id": "earth-ai",
+        "title": "Earth AI",
+        "icon": "climate.svg",
+        "summary": "Building AI-powered planetary observation systems that monitor forest carbon, map surface water changes, and provide high-resolution geospatial intelligence.",
+        "leads": ["Yossi Matias", "Sella Nevo"],
+        "paper_count": 64
+      },
+      {
+        "id": "health-ai",
+        "title": "Health AI",
+        "icon": "healthcare.svg",
+        "summary": "Developing multimodal medical AI foundation models, automated screening for diabetic retinopathy, dermatology classification, and genomic variant calling.",
+        "leads": ["Greg Corrado", "Alan Karthikesalingam"],
+        "paper_count": 182
+      },
+      {
+        "id": "science-ai",
+        "title": "Science AI",
+        "icon": "general-science.svg",
+        "summary": "Transforming molecular chemistry, protein structure prediction, materials discovery, and particle physics through neural simulation and physical inductive biases.",
+        "leads": ["Pushmeet Kohli", "John Jumper"],
+        "paper_count": 145
+      },
+      {
+        "id": "sustainability",
+        "title": "Sustainability & Crisis Resilience",
+        "icon": "flag.svg",
+        "summary": "Operational flood forecasting covering over 460 million people globally, real-time wildfire boundary mapping via satellite imagery, and electrical grid optimization.",
+        "leads": ["Grey Nearing", "Sella Nevo"],
+        "paper_count": 78
+      }
+    ]
+  },
+  {
+    "pillar": "Foundational ML & Reasoning",
+    "slug": "foundational-ml",
+    "description": "Inventing core machine learning algorithms, architectures, and theoretical foundations that power modern artificial intelligence.",
+    "areas": [
+      {
+        "id": "algorithms",
+        "title": "Algorithms & Theory",
+        "icon": "algorithms-and-theory.svg",
+        "summary": "Designing scalable algorithms for sublinear graph streaming, continuous optimization, differential privacy bounds, and combinatorial algorithm design.",
+        "leads": ["Vahab Mirrokni", "Silvio Lattanzi"],
+        "paper_count": 310
+      },
+      {
+        "id": "machine-intelligence",
+        "title": "Machine Intelligence",
+        "icon": "machine-intelligence.svg",
+        "summary": "Frontier multimodal reasoning models, test-time compute scaling, tree-search trajectory verification, and autonomous agent systems.",
+        "leads": ["Jeff Dean", "Sanjay Ghemawat"],
+        "paper_count": 520
+      },
+      {
+        "id": "perception",
+        "title": "Machine Perception",
+        "icon": "machine-perception.svg",
+        "summary": "Audio, visual, and multimodal understanding, 3D neural scene reconstruction (NeRF/Gaussian Splatting), and real-time sensory perception for robotics.",
+        "leads": ["William T. Freeman", "Rahul Sukthankar"],
+        "paper_count": 275
+      },
+      {
+        "id": "nlp",
+        "title": "Natural Language Processing",
+        "icon": "natural-language-processing.svg",
+        "summary": "Inventing the Transformer architecture, advancing multilingual machine translation across 1,000 languages, and scaling context windows to millions of tokens.",
+        "leads": ["Slav Petrov", "Colin Raffel"],
+        "paper_count": 412
+      },
+      {
+        "id": "information-retrieval",
+        "title": "Information Retrieval",
+        "icon": "information-retrieval-and-the-web.svg",
+        "summary": "Dense vector retrieval, semantic ranking, neural re-ranking, and next-generation search engine architecture for world knowledge access.",
+        "leads": ["Corinna Cortes", "Marc Najork"],
+        "paper_count": 195
+      }
+    ]
+  },
+  {
+    "pillar": "Systems, Quantum & Society",
+    "slug": "systems-quantum",
+    "description": "Constructing the physical and algorithmic substrates of computation and ensuring AI is developed responsibly and equitably for humanity.",
+    "areas": [
+      {
+        "id": "quantum",
+        "title": "Quantum AI",
+        "icon": "quantum-computing.svg",
+        "summary": "Developing superconducting transmon quantum processors, demonstrating quantum error correction below surface code thresholds with Willow.",
+        "leads": ["Hartmut Neven", "Julian Kelly"],
+        "paper_count": 115
+      },
+      {
+        "id": "responsible-ai",
+        "title": "Responsible AI",
+        "icon": "ai-vs-ml.svg",
+        "summary": "Pioneering algorithmic fairness, red-teaming, mechanistic interpretability, watermarking for synthetic media (SynthID), and ethical AI principles.",
+        "leads": ["Marian Croak", "Timnit Gebru"],
+        "paper_count": 160
+      },
+      {
+        "id": "hci",
+        "title": "Human-Computer Interaction & Visualization",
+        "icon": "human-computer-interaction-and-visualization.svg",
+        "summary": "Designing collaborative human-AI interactions, generative user interfaces, accessible assistive technologies, and high-dimensional data visualization.",
+        "leads": ["Fernanda Viégas", "Martin Wattenberg"],
+        "paper_count": 134
+      },
+      {
+        "id": "systems",
+        "title": "Software & Hardware Systems",
+        "icon": "hardware-and-architecture.svg",
+        "summary": "Architecting Google Tensor Processing Units (TPU v5p/Trillium), JAX compiler optimization, Borg distributed scheduling, and high-performance datacenter networks.",
+        "leads": ["Amin Vahdat", "Norm Jouppi"],
+        "paper_count": 288
+      }
+    ]
+  }
+]
