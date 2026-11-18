@@ -1,35 +1,34 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Fault-Tolerant Surface Codes: Scaling Logical Qubits in Cryogenic Processors | The Lovelace Journal</title>
-<meta name="description" content="Experimental demonstrations showing that larger surface code lattices suppress logical error rates, proving the viability of scalable quantum computers."/>
+<title>The Lovelace Journal | Perspectives on Frontier Computing, Intelligence &amp; Engineering</title>
+<meta name="description" content="Original perspectives, breakthroughs, and architectural insights in artificial intelligence, custom silicon, quantum computing, and autonomous robotics."/>
 
-<!-- Main Compiled Jekyll Stylesheet -->
+<!-- Main Compiled Stylesheet -->
 <link rel="stylesheet" href="/gemini/assets/css/style.css">
 
 <!-- Open Graph / Social Meta -->
-<meta property="og:type" content="article" />
-<meta property="og:title" content="Fault-Tolerant Surface Codes: Scaling Logical Qubits in Cryogenic Processors"/>
-<meta property="og:description" content="Experimental demonstrations showing that larger surface code lattices suppress logical error rates, proving the viability of scalable quantum computers." />
-<meta property="og:image" content="https://irbox.github.io/gemini/assets/images/posts/post-quantum.svg" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="The Lovelace Journal"/>
+<meta property="og:description" content="Original perspectives, breakthroughs, and architectural insights in artificial intelligence, custom silicon, quantum computing, and autonomous robotics." />
+<meta property="og:image" content="https://irbox.github.io/gemini/assets/images/posts/post-hydrogen.svg" />
 <meta property="og:url" content="https://irbox.github.io/gemini/quantum-computing/2026/10/28/scaling-logical-qubits-fault-tolerant-surface-codes/" />
 <meta property="og:site_name" content="The Lovelace Journal" />
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Fault-Tolerant Surface Codes: Scaling Logical Qubits in Cryogenic Processors"/>
-<meta name="twitter:description" content="Experimental demonstrations showing that larger surface code lattices suppress logical error rates, proving the viability of scalable quantum computers." />
-<meta name="twitter:image" content="https://irbox.github.io/gemini/assets/images/posts/post-quantum.svg" />
+<meta name="twitter:title" content="The Lovelace Journal"/>
+<meta name="twitter:description" content="Original perspectives, breakthroughs, and architectural insights in artificial intelligence, custom silicon, quantum computing, and autonomous robotics." />
+<meta name="twitter:image" content="https://irbox.github.io/gemini/assets/images/posts/post-hydrogen.svg" />
 <meta name="twitter:site" content="@lovelace_tech" />
 
 <!-- Canonical & Favicons -->
 <link rel="canonical" href="https://irbox.github.io/gemini/quantum-computing/2026/10/28/scaling-logical-qubits-fault-tolerant-surface-codes/"/>
 <link rel="icon" type="image/svg+xml" href="/gemini/assets/images/favicon.svg"/>
-
   </head>
   <body>
     <a href="#main-content" class="skip-to-content">Skip to content</a>
@@ -43,36 +42,35 @@
     <nav class="site-header__nav" aria-label="Main Navigation">
       
         
-        
         <a href="/gemini/" class="nav-link">
-          All Stories
+          Home
         </a>
       
         
-        
-        <a href="/gemini/categories/#frontier-ai" class="nav-link">
-          Frontier AI
+        <a href="/gemini/research-areas/" class="nav-link">
+          Research Areas
         </a>
       
         
-        
-        <a href="/gemini/categories/#hardware-accelerators" class="nav-link">
-          Hardware
+        <a href="/gemini/publications/" class="nav-link">
+          Publications
         </a>
       
         
-        
-        <a href="/gemini/categories/#quantum-computing" class="nav-link">
-          Quantum
+        <a href="/gemini/projects/" class="nav-link">
+          Projects
         </a>
       
         
-        
-        <a href="/gemini/categories/#autonomous-systems" class="nav-link">
-          Autonomous Systems
+        <a href="/gemini/people/" class="nav-link">
+          People
         </a>
       
         
+        <a href="/gemini/categories/" class="nav-link">
+          Journal
+        </a>
+      
         
         <a href="/gemini/about/" class="nav-link">
           About
@@ -105,23 +103,27 @@
 <div class="mobile-drawer" data-mobile-drawer>
   
     <a href="/gemini/" class="mobile-link">
-      All Stories
+      Home
     </a>
   
-    <a href="/gemini/categories/#frontier-ai" class="mobile-link">
-      Frontier AI
+    <a href="/gemini/research-areas/" class="mobile-link">
+      Research Areas
     </a>
   
-    <a href="/gemini/categories/#hardware-accelerators" class="mobile-link">
-      Hardware
+    <a href="/gemini/publications/" class="mobile-link">
+      Publications
     </a>
   
-    <a href="/gemini/categories/#quantum-computing" class="mobile-link">
-      Quantum
+    <a href="/gemini/projects/" class="mobile-link">
+      Projects
     </a>
   
-    <a href="/gemini/categories/#autonomous-systems" class="mobile-link">
-      Autonomous Systems
+    <a href="/gemini/people/" class="mobile-link">
+      People
+    </a>
+  
+    <a href="/gemini/categories/" class="mobile-link">
+      Journal
     </a>
   
     <a href="/gemini/about/" class="mobile-link">
@@ -130,9 +132,13 @@
   
 </div>
 
-
     <main id="main-content" class="main-content">
       
+
+
+
+
+
 
 <article class="post-layout container">
   <nav class="post-layout__breadcrumbs" aria-label="Breadcrumb">
@@ -158,16 +164,12 @@
 
     <div class="post-layout__author-bar">
       <div class="author-info">
-        
-          <img src="/gemini/assets/images/authors/elena-rostova.svg" alt="Dr. Elena Rostova" class="author-avatar">
-        
         <div>
-          <div class="author-name">Dr. Elena Rostova</div>
-          <div class="author-role">Quantum Algorithms & Surface Code Lead</div>
+          <div class="author-name">elena-rostova</div>
         </div>
       </div>
       <div>
-        <time datetime="2026-10-28T19:00:00.000Z">October 28, 2026</time>
+        <time>2026-10-28 11:00:00 -0800</time>
         <span>•</span>
         <span>5 min read</span>
       </div>
@@ -190,23 +192,124 @@
   </div>
 
   <div class="post-layout__share">
-    <a href="/gemini/" class="btn btn--outline">← Back to all stories</a>
+    <a href="/gemini/" class="btn btn--outline">← Back to all research</a>
     <div style="font-size: 0.875rem; color: #5f6368;">
-      Share story: 
-      <a href="https://twitter.com/intent/tweet?text=Fault-Tolerant%20Surface%20Codes%3A%20Scaling%20Logical%20Qubits%20in%20Cryogenic%20Processors&url=https://irbox.github.io/gemini/quantum-computing/2026/10/28/scaling-logical-qubits-fault-tolerant-surface-codes/" target="_blank" rel="noopener">Twitter / X</a> • 
-      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://irbox.github.io/gemini/quantum-computing/2026/10/28/scaling-logical-qubits-fault-tolerant-surface-codes/" target="_blank" rel="noopener">LinkedIn</a>
+      Share paper: 
+      <a href="https://twitter.com/lovelace_tech" target="_blank" rel="noopener">Twitter / X</a> • 
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </div>
 
   <div class="post-layout__related">
-    <h3 style="font-family: inherit; font-size: 1.5rem; margin-bottom: 24px;">More in Quantum computing</h3>
+    <h3 style="font-family: inherit; font-size: 1.5rem; margin-bottom: 24px;">More Research in Quantum computing</h3>
     <div class="stories-grid">
       
-      
+        
+          
+
+<article class="story-card" data-story-category="frontier-ai">
+  
+    
+    <div class="story-card__media">
+      <a href="/gemini/frontier-ai/2026/11/14/contextual-in-browser-neural-synthesis/">
+        <img src="/gemini/assets/images/posts/post-browser.svg" alt="Contextual In-Browser Neural Synthesis: Real-Time Research Assistance" class="story-card__img" loading="lazy">
+      </a>
+    </div>
+  
+
+  <div class="story-card__content">
+    <div class="story-card__eyebrow">
+      <a href="/gemini/categories/#frontier-ai" class="badge">
+        Frontier ai
+      </a>
+    </div>
+
+    <h3 class="story-card__title">
+      <a href="/gemini/frontier-ai/2026/11/14/contextual-in-browser-neural-synthesis/">Contextual In-Browser Neural Synthesis: Real-Time Research Assistance</a>
+    </h3>
+
+    <p class="story-card__excerpt">
+      How in-browser neural coprocessors enable instant technical paper synthesis, visual grounding across SVG charts, and interactive code verification.
+    </p>
+
+    <div class="story-card__footer">
+      <span>2026-11-14 10:00:00 -0800</span>
+      <span>4 min read</span>
+    </div>
+  </div>
+</article>
         
       
         
+          
+
+<article class="story-card" data-story-category="frontier-ai">
+  
+    
+    <div class="story-card__media">
+      <a href="/gemini/frontier-ai/2026/11/12/introducing-hydrogen-4-foundational-reasoning/">
+        <img src="/gemini/assets/images/posts/post-hydrogen.svg" alt="Introducing Hydrogen-4: Next-Generation Foundational Reasoning Models" class="story-card__img" loading="lazy">
+      </a>
+    </div>
+  
+
+  <div class="story-card__content">
+    <div class="story-card__eyebrow">
+      <a href="/gemini/categories/#frontier-ai" class="badge">
+        Frontier ai
+      </a>
+    </div>
+
+    <h3 class="story-card__title">
+      <a href="/gemini/frontier-ai/2026/11/12/introducing-hydrogen-4-foundational-reasoning/">Introducing Hydrogen-4: Next-Generation Foundational Reasoning Models</a>
+    </h3>
+
+    <p class="story-card__excerpt">
+      Hydrogen-4 achieves record benchmark results in multimodal comprehension, mathematical deduction, and self-verifying agent workflows.
+    </p>
+
+    <div class="story-card__footer">
+      <span>2026-11-12 09:00:00 -0800</span>
+      <span>5 min read</span>
+    </div>
+  </div>
+</article>
+        
       
+        
+          
+
+<article class="story-card" data-story-category="hardware-accelerators">
+  
+    
+    <div class="story-card__media">
+      <a href="/gemini/hardware-accelerators/2026/11/10/next-gen-matrix-silicon-accelerators/">
+        <img src="/gemini/assets/images/posts/post-accelerator.svg" alt="Next-Gen Matrix Silicon: Custom Microarchitectures for Agentic Computing" class="story-card__img" loading="lazy">
+      </a>
+    </div>
+  
+
+  <div class="story-card__content">
+    <div class="story-card__eyebrow">
+      <a href="/gemini/categories/#hardware-accelerators" class="badge">
+        Hardware accelerators
+      </a>
+    </div>
+
+    <h3 class="story-card__title">
+      <a href="/gemini/hardware-accelerators/2026/11/10/next-gen-matrix-silicon-accelerators/">Next-Gen Matrix Silicon: Custom Microarchitectures for Agentic Computing</a>
+    </h3>
+
+    <p class="story-card__excerpt">
+      Meet Matrix-8X and Matrix-8i: Custom-engineered 3nm silicon designed to power trillion-parameter models with direct-to-chip microfluidic cooling.
+    </p>
+
+    <div class="story-card__footer">
+      <span>2026-11-10 10:30:00 -0800</span>
+      <span>6 min read</span>
+    </div>
+  </div>
+</article>
         
       
         
@@ -222,7 +325,6 @@
     </div>
   </div>
 </article>
-
     </main>
 
     <footer class="site-footer">
@@ -243,11 +345,11 @@
         <ul class="site-footer__links">
           
             <li>
-              <a href="/gemini/categories/#frontier-ai">Frontier AI & Reasoning</a>
+              <a href="/gemini/categories/#frontier-ai">Frontier AI &amp; Reasoning</a>
             </li>
           
             <li>
-              <a href="/gemini/categories/#hardware-accelerators">Hardware & Accelerators</a>
+              <a href="/gemini/categories/#hardware-accelerators">Hardware &amp; Accelerators</a>
             </li>
           
             <li>
@@ -259,7 +361,7 @@
             </li>
           
             <li>
-              <a href="/gemini/categories/#biosensors-health">Biosensors & Health</a>
+              <a href="/gemini/categories/#biosensors-health">Biosensors &amp; Health</a>
             </li>
           
         </ul>
@@ -268,6 +370,18 @@
       <div>
         <h4 class="site-footer__col-title">About & Research</h4>
         <ul class="site-footer__links">
+          
+            <li>
+              <a href="/gemini/about/#ethics">Research Ethics</a>
+            </li>
+          
+            <li>
+              <a href="/gemini/https://github.com/irbox/gemini">Open Source Code</a>
+            </li>
+          
+            <li>
+              <a href="/gemini/about/#reproducibility">Reproducibility Charter</a>
+            </li>
           
         </ul>
       </div>
@@ -281,7 +395,7 @@
             </li>
           
             <li>
-              <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">Twitter / X</a>
+              <a href="https://twitter.com/lovelace_tech" target="_blank" rel="noopener noreferrer">Twitter &#x2f; X</a>
             </li>
           
             <li>
@@ -303,7 +417,6 @@
     </div>
   </div>
 </footer>
-
     <div class="search-modal" data-search-modal data-baseurl="/gemini">
   <div class="search-modal__content">
     <div class="search-modal__header">
@@ -317,7 +430,6 @@
     <div class="search-modal__results" data-search-results></div>
   </div>
 </div>
-
     <!-- Privacy & Cookie Banner -->
 <div class="privacy-notification-bar" style="display:none;" id="privacyNotice" role="region" aria-label="Privacy Notice">
   <div class="container">
@@ -325,7 +437,6 @@
     <button type="button" class="btn btn--outline" onclick="document.getElementById('privacyNotice').style.display='none'; localStorage.setItem('cookieConsent','dismissed');">Acknowledge</button>
   </div>
 </div>
-
 
     <script src="/gemini/assets/js/main.js"></script>
   </body>

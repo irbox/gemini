@@ -1,67 +1,100 @@
 [
-  
   {
+    "category": "frontier-ai",
+    "date": "2026-11-14 10:00:00 -0800",
+    "description": "How in-browser neural coprocessors enable instant technical paper synthesis, visual grounding across SVG charts, and interactive code verification.",
     "title": "Contextual In-Browser Neural Synthesis: Real-Time Research Assistance",
-    "url": "/gemini/frontier-ai/2026/11/14/contextual-in-browser-neural-synthesis/",
-    "category": "Frontier ai",
-    "date": "November 14, 2026",
-    "description": "How in-browser neural coprocessors enable instant technical paper synthesis, visual grounding across SVG charts, and interactive code verification."
+    "url": "/gemini/frontier-ai/2026/11/14/contextual-in-browser-neural-synthesis/"
   },
-  
   {
+    "category": "frontier-ai",
+    "date": "2026-11-12 09:00:00 -0800",
+    "description": "Hydrogen-4 achieves record benchmark results in multimodal comprehension, mathematical deduction, and self-verifying agent workflows.",
     "title": "Introducing Hydrogen-4: Next-Generation Foundational Reasoning Models",
-    "url": "/gemini/frontier-ai/2026/11/12/introducing-hydrogen-4-foundational-reasoning/",
-    "category": "Frontier ai",
-    "date": "November 12, 2026",
-    "description": "Hydrogen-4 achieves record benchmark results in multimodal comprehension, mathematical deduction, and self-verifying agent workflows."
+    "url": "/gemini/frontier-ai/2026/11/12/introducing-hydrogen-4-foundational-reasoning/"
   },
-  
   {
+    "category": "hardware-accelerators",
+    "date": "2026-11-10 10:30:00 -0800",
+    "description": "Meet Matrix-8X and Matrix-8i: Custom-engineered 3nm silicon designed to power trillion-parameter models with direct-to-chip microfluidic cooling.",
     "title": "Next-Gen Matrix Silicon: Custom Microarchitectures for Agentic Computing",
-    "url": "/gemini/hardware-accelerators/2026/11/10/next-gen-matrix-silicon-accelerators/",
-    "category": "Hardware accelerators",
-    "date": "November 10, 2026",
-    "description": "Meet Matrix-8X and Matrix-8i: Custom-engineered 3nm silicon designed to power trillion-parameter models with direct-to-chip microfluidic cooling."
+    "url": "/gemini/hardware-accelerators/2026/11/10/next-gen-matrix-silicon-accelerators/"
   },
-  
   {
+    "category": "biosensors-health",
+    "date": "2026-11-08 08:00:00 -0800",
+    "description": "Analyzing telemetry data and market adoption patterns across intelligent rings, lightweight smart glasses, and ambient computing nodes.",
     "title": "Annual Consumer Hardware Retrospective: The Rise of Intelligent Spatial Devices",
-    "url": "/gemini/biosensors-health/2026/11/08/annual-consumer-hardware-retrospective/",
-    "category": "Biosensors health",
-    "date": "November 8, 2026",
-    "description": "Analyzing telemetry data and market adoption patterns across intelligent rings, lightweight smart glasses, and ambient computing nodes."
+    "url": "/gemini/biosensors-health/2026/11/08/annual-consumer-hardware-retrospective/"
   },
-  
   {
+    "category": "hardware-accelerators",
+    "date": "2026-11-05 11:00:00 -0800",
+    "description": "How asymmetric heterogeneous cores and on-device neural coprocessors dynamically tune voltage states to gain 4+ hours of battery life.",
     "title": "Edge Coprocessors & Adaptive Power Tuning in Modern Mobile Platforms",
-    "url": "/gemini/hardware-accelerators/2026/11/05/edge-coprocessors-power-optimization/",
-    "category": "Hardware accelerators",
-    "date": "November 5, 2026",
-    "description": "How asymmetric heterogeneous cores and on-device neural coprocessors dynamically tune voltage states to gain 4+ hours of battery life."
+    "url": "/gemini/hardware-accelerators/2026/11/05/edge-coprocessors-power-optimization/"
   },
-  
   {
+    "category": "biosensors-health",
+    "date": "2026-11-03 09:30:00 -0800",
+    "description": "How multi-wavelength optical PPG arrays and continuous electrodermal tracking fit inside an 8.2mm sculpted aluminum enclosure.",
     "title": "The Edge Biomarker Platform: Advanced Biosensors in Ultra-Thin Form Factors",
-    "url": "/gemini/biosensors-health/2026/11/03/edge-biomarker-wearable-platform/",
-    "category": "Biosensors health",
-    "date": "November 3, 2026",
-    "description": "How multi-wavelength optical PPG arrays and continuous electrodermal tracking fit inside an 8.2mm sculpted aluminum enclosure."
+    "url": "/gemini/biosensors-health/2026/11/03/edge-biomarker-wearable-platform/"
   },
-  
   {
+    "category": "autonomous-systems",
+    "date": "2026-11-01 14:00:00 -0800",
+    "description": "Overcoming speed-of-light communication lag on extraterrestrial bodies using self-contained spatial perception and energy-optimal traversal graphs.",
     "title": "Autonomous Pathfinding for Deep Space Robotics: High-Altitude Terrain Navigation",
-    "url": "/gemini/autonomous-systems/2026/11/01/autonomous-pathfinding-deep-space-robotics/",
-    "category": "Autonomous systems",
-    "date": "November 1, 2026",
-    "description": "Overcoming speed-of-light communication lag on extraterrestrial bodies using self-contained spatial perception and energy-optimal traversal graphs."
+    "url": "/gemini/autonomous-systems/2026/11/01/autonomous-pathfinding-deep-space-robotics/"
   },
-  
   {
+    "category": "quantum-computing",
+    "date": "2026-10-28 11:00:00 -0800",
+    "description": "Experimental demonstrations showing that larger surface code lattices suppress logical error rates, proving the viability of scalable quantum computers.",
     "title": "Fault-Tolerant Surface Codes: Scaling Logical Qubits in Cryogenic Processors",
-    "url": "/gemini/quantum-computing/2026/10/28/scaling-logical-qubits-fault-tolerant-surface-codes/",
-    "category": "Quantum computing",
-    "date": "October 28, 2026",
-    "description": "Experimental demonstrations showing that larger surface code lattices suppress logical error rates, proving the viability of scalable quantum computers."
+    "url": "/gemini/quantum-computing/2026/10/28/scaling-logical-qubits-fault-tolerant-surface-codes/"
+  },
+  {
+    "category": "Foundational ML & Reasoning",
+    "date": "NeurIPS 2026 (Oral)",
+    "description": "We formulate recursive reasoning as stochastic pathfinding across dynamic inference graphs. By coupling an adaptive value estimator with tree-search rollout policies, our model Hydrogen-4 achieves...",
+    "title": "Monte Carlo Trajectory Synthesis in Recursive Reasoning Models",
+    "url": "/gemini/publications/#hydrogen-mcts"
+  },
+  {
+    "category": "Hardware & Custom Silicon",
+    "date": "IEEE Micro / Hot Chips 2026",
+    "description": "Modern transformer workloads are constrained by off-chip bandwidth bottlenecks. We introduce a hybrid 3nm silicon coprocessor integrating CMOS systolic tensor execution cores with on-interposer micro-ring...",
+    "title": "Sub-Picosecond Optical Routing in Scalable Matrix Silicon",
+    "url": "/gemini/publications/#matrix-photonic"
+  },
+  {
+    "category": "Quantum & Error Mitigation",
+    "date": "PRX Quantum 2026",
+    "description": "We demonstrate continuous fault-tolerant syndromic decoding on a planar square lattice of 128 transmon qubits. Operating at 12 mK, our distance-7 surface code achieves a...",
+    "title": "Fault-Tolerant Surface Codes at Distance-7 on 128 Superconducting Transmons",
+    "url": "/gemini/publications/#surface-code-distance7"
+  },
+  {
+    "category": "Applied AI & Sciences",
+    "date": "ACM Web3D / Systems 2026",
+    "description": "Executing multi-billion parameter foundational models in client web browsers requires overcoming memory transfer overhead between JavaScript heaps and GPU VRAM. We design a zero-copy circular...",
+    "title": "Zero-Copy KV-Cache Streaming via WebGPU Compute Shaders",
+    "url": "/gemini/publications/#in-browser-shaders"
+  },
+  {
+    "category": "Biosensors & Health",
+    "date": "Nature Digital Medicine 2026",
+    "description": "We introduce a wearable multi-spectral photoplethysmography sensor consuming less than 1.2 mW active power. Using an embedded spiking neural network running on an on-die 16-bit...",
+    "title": "Continuous Photometric Micro-Sensor Arrays for On-Die Hemodynamic Profiling",
+    "url": "/gemini/publications/#chrono-ppg"
+  },
+  {
+    "category": "Autonomous Robotics",
+    "date": "IEEE Transactions on Robotics (T-RO) 2026",
+    "description": "Deep-space surface explorers cannot rely on GPS or high-frequency Earth communication. We present an event-camera visual-inertial SLAM architecture hardened against single-event upsets (SEU) with asynchronous...",
+    "title": "Radiation-Hardened Asynchronous Visual SLAM for Deep-Space Interplanetary Explorers",
+    "url": "/gemini/publications/#astra-slam"
   }
-  
 ]
