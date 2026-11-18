@@ -4,10 +4,10 @@
   "description": "The Lovelace Journal - Modern Jekyll static research publication and engineering blog",
   "type": "module",
   "scripts": {
-    "build": "cargo run --release -- build",
-    "build:release": "cargo run --release -- build",
+    "build": "PATH=\"$HOME/.cargo/bin:$PATH\" cargo run --release -- build",
+    "build:release": "PATH=\"$HOME/.cargo/bin:$PATH\" cargo run --release -- build",
     "preview": "npx serve dist",
-    "test": "node --test test/*.test.js && cargo test",
+    "test": "node --test test/*.test.js && (PATH=\"$HOME/.cargo/bin:$PATH\" cargo test)",
     "start": "npx serve dist"
   },
   "keywords": [
